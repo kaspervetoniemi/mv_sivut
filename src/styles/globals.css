@@ -6,7 +6,7 @@
   --teksti:        #2C1A1A;
   --pinkki:        #B87878;
   --pinkki-teksti: #FFFFFF;
-  --vaalea:        #F5ECE8;
+  --vaalea:        #f0e0da;
   --harmaa:        #8A6E6E;
   --kortti:        #FFFFFF;
   --reuna:         rgba(180, 120, 120, 0.18);
@@ -232,6 +232,7 @@ a { text-decoration: none; color: inherit; }
    RUUDUKKO
    ──────────────────────────────────────── */
 .ruudukko-2 {
+  scroll-margin-top: 6rem; /* Jättää yläreunaan tilaa kiinteälle valikolle */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
@@ -279,11 +280,10 @@ a { text-decoration: none; color: inherit; }
 /* ────────────────────────────────────────
    KUVA-ALUEET
    ──────────────────────────────────────── */
-.esittely-kuva  { aspect-ratio: 4/5;  border-radius: 1rem; overflow: hidden; background: #E8D0CA; }
-.palvelusivu-kuva { aspect-ratio: 16/9; border-radius: 1rem; overflow: hidden; background: #E8D0CA; }
-.palvelukortti-kuva  { aspect-ratio: 4/3;  overflow: hidden; background: #E8D0CA; }
-.hero-tausta { aspect-ratio: 16/7; overflow: hidden; background: #E8D0CA; }
-
+.esittely-kuva    { width: 100%; aspect-ratio: 4/5;  border-radius: 1rem; overflow: hidden; background: #E8D0CA; object-fit: cover; }
+.palvelusivu-kuva { width: 100%; aspect-ratio: 16/9; border-radius: 1rem; overflow: hidden; background: #E8D0CA; object-fit: cover; }
+.palvelukortti-kuva  { width: 100%; aspect-ratio: 4/3;  overflow: hidden; background: #E8D0CA; object-fit: cover; }
+.hero-tausta      { width: 100%; aspect-ratio: 16/7; overflow: hidden; background: #E8D0CA; object-fit: cover; }
 /* ────────────────────────────────────────
    HERO
    ──────────────────────────────────────── */

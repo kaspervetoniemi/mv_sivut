@@ -20,16 +20,23 @@ export default function Home({ navigate }: Props) {
 
       {/* ── HERO ── */}
       <section className="hero">
-        {/* Replace src with your own video, e.g. "/video/hero.mp4" */}
-        <video className="hero-video" autoPlay muted loop playsInline>
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-hands-massaging-a-persons-back-42618-large.mp4" type="video/mp4" />
+        <video 
+    className="hero-video" 
+    autoPlay 
+    muted 
+    loop 
+    playsInline 
+    poster="/assets/hero-poster.jpg"
+  >
+    <source src="/public/herovideo.mp4" type="video/mp4" />
         </video>
+        <div className="hero-peitto backdrop-blur-[4px]" />
         <div className="hero-peitto" />
         <div className="hero-sisalto">
-          <span className="hero-ylateksti">Hermoratahieronta &amp; Ravintovalmennus</span>
-          <h1 className="hero-otsikko">Kokonaisvaltaista hyvinvointia kehollesi</h1>
+          <span className="hero-ylateksti">Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.</span>
+          <h1 className="hero-otsikko">Yksilöllistä ravintovalmennusta, psyykkistä valmennusta ja hermoratahierontaa</h1>
           <p className="hero-alaotsikko">
-            Asiantuntevaa hermoratahierontaa ja yksilöllistä ravintovalmennusta — räätälöitynä juuri sinulle.
+            Sinun tilanteesi, tarpeesi ja tavoitteesi ovat työskentelyn lähtökohta.
           </p>
           <div className="hero-napit">
             <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">Varaa aika</button>
@@ -62,30 +69,53 @@ export default function Home({ navigate }: Props) {
         </div>
       </section>
 
-      {/* ── SERVICES ── */}
-      <section className="osio osio-vaalea">
-        <div className="sisalto">
-          <div className="otsikkoalue">
-            <span className="ylateksti">Palvelut</span>
-            <h2 className="otsikko">Palvelut</h2>
+   {/* ── SERVICES ── */}
+<section className="osio osio-vaalea">
+  <div className="sisalto">
+    <div className="otsikkoalue">
+      <span className="ylateksti">Palvelut</span>
+      <h2 className="otsikko">Palvelut</h2>
+    </div>
+
+    <div className="ruudukko-2-palvelut">
+      {services.map(service => (
+        <div 
+          key={service.title} 
+          className="kortti"
+          style={{ cursor: "pointer" }}
+          onClick={() => {
+            // 1. Vaihdetaan ensin Palvelut-sivulle (alkuperäinen komento)
+            navigate("palvelut");
+            
+            // 2. Odotetaan pieni hetki, että sivu ehtii piirtyä ruudulle,
+            // ja käsketään selainta rullaamaan pehmeästi oikeaan kohtaan
+            setTimeout(() => {
+              const kohde = document.getElementById(service.id);
+              if (kohde) {
+                kohde.scrollIntoView({ behavior: "auto" });
+              }
+            }, 10);
+          }}
+        >
+          <div className="palvelukortti-kuva">
+            <img src={service.img} alt={service.imgAlt} />
           </div>
-          <div className="ruudukko-2-palvelut">
-            {services.map(service => (
-              <div key={service.title} className="kortti">
-                <div className="kuva-167"><img src={service.img} alt={service.imgAlt} /></div>
-                <div className="kortti-sisalto">
-                  <span className="palvelu-ikoni">{service.icon}</span>
-                  <h3 className="palvelu-otsikko">{service.title}</h3>
-                  <p className="palvelu-teksti">{service.shortDescription}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
-            <button onClick={() => navigate("palvelut")} className="nappi nappi-reunus">Lue lisää palveluista</button>
+          <div className="kortti-sisalto">
+            <span className="palvelu-ikoni">{service.icon}</span>
+            <h3 className="palvelu-otsikko">{service.title}</h3>
+            <p className="palvelu-teksti">{service.shortDescription}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+
+    <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+      <button onClick={() => navigate("palvelut")} className="nappi nappi-reunus">
+        Lue lisää palveluista
+      </button>
+    </div>
+  </div>
+</section>
 
       {/* ── TESTIMONIALS ── */}
       <section className="osio osio-pinkki">

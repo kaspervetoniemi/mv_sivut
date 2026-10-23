@@ -10,6 +10,7 @@ export const services = [
     icon: "✦",
     img: "hermoratahieronta1.webp",
     imgAlt: "Hieronta kuumakivillä",
+    id: "hermoratahieronta" /* TÄMÄ LISÄTTIIN */
   },
   {
     title: "Purentalihastenhieronta",
@@ -18,6 +19,7 @@ export const services = [
     icon: "◈",
     img: "purentalihashieronta1.webp",
     imgAlt: "Kasvojen ja leuan alueen hieronta",
+    id: "purentalihas" /* TÄMÄ LISÄTTIIN */
   },
   {
     title: "Psyykkinen valmennus",
@@ -26,6 +28,7 @@ export const services = [
     icon: "❋",
     img: "psyykkinenvalmennus1.webp",
     imgAlt: "Terveellistä ruokaa lautasella",
+    id: "psyykkinen" /* TÄMÄ LISÄTTIIN */
   },
   {
     title: "Cambridge-ohjelma",
@@ -34,8 +37,11 @@ export const services = [
     icon: "◇",
     img: "cambridge1.webp",
     imgAlt: "Terveellistä hedelmää ja ravintoa",
+    id: "cambridge" /* TÄMÄ LISÄTTIIN */
   },
 ];
+
+// ... hinnasto (prices) ja arvostelut (testimonials) jatkuvat tästä normaalisti ...
 
 export const prices = [
   { service: "Hermoratahieronta", duration: "120 min", price: "85 €" },

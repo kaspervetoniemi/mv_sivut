@@ -17,12 +17,13 @@ export default function Palvelut({ navigate }: Props) {
         <h1 className="otsikko">Palvelut</h1>
       </div>
 
-      {/* ── SERVICE LIST — alternating image sides ── */}
+   {/* ── SERVICE LIST — alternating image sides ── */}
       <section className="osio osio-vaalea">
         <div className="sisalto">
           {services.map((service, i) => (
             <div
               key={service.title}
+              id={service.id} /* LISÄÄ TÄMÄ RIVI TÄHÄN */
               /* TÄSSÄ ON MUUTOS: Lisätään kaanna-mobiilissa vain jos kuva on koodissa ensin */
               className={`ruudukko-2 ${i % 2 === 0 ? 'kaanna-mobiilissa' : ''}`}
               style={{ marginBottom: i < services.length - 1 ? "5rem" : "0" }}
