@@ -136,8 +136,7 @@ export default function Yhteystiedot({ navigate }: Props) {
               <div style={{ borderRadius: "1rem", overflow: "hidden", border: "1px solid var(--reuna)", height: "100%", minHeight: "350px" }}>
                 <iframe 
                   title="Sijainti kartalla"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1271.5337424636693!2d24.247866781552883!3d63.773878904606946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4686d37ec2b924f9%3A0x614da4bbba089ab4!2sLampintie%202%2C%2069300%20Toholampi!5e1!3m2!1sfi!2sfi!4v1792165390777!5m2!1sfi!2sfi" 
-                  width="100%" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.275172101446!2d24.248871207733032!3d63.77358692121012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4686d33eaf9ba8f5%3A0xff95c21334a71fc6!2sHermoratahieroja%20Maria%20Viitasalo!5e1!3m2!1sfi!2sfi!4v1792798955853!5m2!1sfi!2sfi"                  width="100%" 
                   height="100%" 
                   style={{ border: 0, display: "block", minHeight: "350px" }} 
                   allowFullScreen={true} 

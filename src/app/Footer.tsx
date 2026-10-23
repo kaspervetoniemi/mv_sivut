@@ -23,7 +23,11 @@ export default function Footer({ navigate }: Props) {
           {/* Column 1 — branding */}
           <div>
             <p className="footer-logo">Tmi Maria Viitasalo</p>
-            <p className="footer-tagline">Hermoratahieronnan mestari, ravintovalmentaja & psyykkinen valmentaja</p>
+            <p className="footer-tagline">
+              Hermoratahieronnan mestari,<br/>
+              ravintovalmentaja &amp; <br/>
+              psyykkinen valmentaja
+            </p>
           </div>
 
           {/* Column 2 — contact */}
