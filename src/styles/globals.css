@@ -1,0 +1,732 @@
+/* ────────────────────────────────────────
+   MUUTTUJAT (värit, fontit)
+   ──────────────────────────────────────── */
+:root {
+  --tausta:        #FAF7F2;
+  --teksti:        #2C1A1A;
+  --pinkki:        #B87878;
+  --pinkki-teksti: #FFFFFF;
+  --vaalea:        #F5ECE8;
+  --harmaa:        #8A6E6E;
+  --kortti:        #FFFFFF;
+  --reuna:         rgba(180, 120, 120, 0.18);
+  --fontti-otsikko: 'Playfair Display', serif;
+  --fontti-teksti:  'DM Sans', sans-serif;
+}
+
+/* ────────────────────────────────────────
+   PERUSASETUKSET
+   ──────────────────────────────────────── */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--fontti-teksti);
+  background: var(--tausta);
+  color: var(--teksti);
+  line-height: 1.6;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+a { text-decoration: none; color: inherit; }
+
+/* ────────────────────────────────────────
+   NAVIGAATIO
+   ──────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(250, 247, 242, 0.93);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--reuna);
+}
+
+.nav-sisalto {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--fontti-otsikko);
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--teksti);
+  padding: 0;
+}
+
+.nav-linkit {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  list-style: none;
+}
+
+.nav-linkit button:not(.nav-nappi) {
+  font-family: var(--fontti-teksti);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--harmaa);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-linkit button:not(.nav-nappi):hover,
+.nav-linkit button.aktiivinen { 
+  color: var(--teksti); 
+}
+
+.nav-nappi {
+  font-family: var(--fontti-teksti);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background: var(--pinkki);
+  color: var(--pinkki-teksti);
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nav-nappi:hover { opacity: 0.85; }
+
+.nav-hampurilainen {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: var(--teksti);
+}
+
+.nav-mobiili {
+  display: none;
+  flex-direction: column;
+  align-items: center; /* Keskittää linkit pystysuunnassa */
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--tausta);
+  border-top: 1px solid var(--reuna);
+}
+
+/* Mobiilivalikon tavalliset linkit (ei ajanvaraus-nappi) */
+.nav-mobiili button:not(.nav-nappi) {
+  font-family: var(--fontti-teksti);
+  font-size: 0.95rem;
+  letter-spacing: normal;
+  text-transform: none; /* Normaalit kirjainkoot kuten kuvassa (esim. "Etusivu") */
+  color: var(--harmaa); /* KORJATTU: Sama perusväri kuin työpöytänavissa */
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+/* Hoveeraus ja aktiivinen tila mobiilissa */
+.nav-mobiili button:not(.nav-nappi):hover,
+.nav-mobiili button.aktiivinen {
+  color: var(--teksti); /* KORJATTU: Sama hover-väri (tummuu) kuin työpöytänavissa */
+}
+
+/* Ajanvaraus-nappi venytetään koko leveydelle */
+.nav-mobiili .nav-nappi { 
+  width: 100%;
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.nav-mobiili.auki { display: flex; }
+
+@media (max-width: 768px) {
+  .nav-linkit { display: none; }
+  .nav-hampurilainen { display: block; }
+}
+
+/* ────────────────────────────────────────
+   SIVU
+   ──────────────────────────────────────── */
+.sivu { padding-top: 4rem; }
+
+.osio {
+  padding: 6rem 1.5rem;
+}
+
+.osio-vaalea { background: var(--tausta); }
+.osio-pinkki { background: var(--vaalea); }
+
+.sisalto       { max-width: 1152px; margin: 0 auto; }
+.sisalto-keski { max-width: 768px;  margin: 0 auto; }
+.sisalto-pieni { max-width: 640px;  margin: 0 auto; }
+
+/* ────────────────────────────────────────
+   OTSIKKOALUE
+   ──────────────────────────────────────── */
+.otsikkoalue {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.ylateksti {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--pinkki);
+  margin-bottom: 1rem;
+}
+
+.otsikko {
+  font-family: var(--fontti-otsikko);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* ────────────────────────────────────────
+   NAPIT
+   ──────────────────────────────────────── */
+.nappi {
+  display: inline-block;
+  font-family: var(--fontti-teksti);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.nappi-pinkki  { background: var(--pinkki); color: var(--pinkki-teksti); }
+.nappi-pinkki:hover { opacity: 0.85; }
+
+.nappi-reunus  { background: transparent; color: var(--teksti); border: 1px solid var(--reuna); }
+.nappi-reunus:hover { background: var(--vaalea); }
+
+.nappi-valkoinen { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.6); }
+.nappi-valkoinen:hover { background: rgba(255,255,255,0.1); }
+
+.nappi-taysleveys { width: 100%; text-align: center; padding: 1rem 2rem; }
+
+/* ────────────────────────────────────────
+   RUUDUKKO
+   ──────────────────────────────────────── */
+.ruudukko-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.ruudukko-2-palvelut {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+@media (max-width: 768px) {
+  .ruudukko-2,
+  .ruudukko-2-palvelut { 
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .kaanna-mobiilissa {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ────────────────────────────────────────
+   KORTTI
+   ──────────────────────────────────────── */
+.kortti {
+  background: var(--kortti);
+  border: 1px solid var(--reuna);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.kortti:hover { box-shadow: 0 4px 20px rgba(44,26,26,0.08); }
+
+.kortti-sisalto { padding: 1.75rem; }
+
+.palvelu-ikoni  { font-size: 1.5rem; color: var(--pinkki); display: block; margin-bottom: 1rem; }
+.palvelu-otsikko { font-family: var(--fontti-otsikko); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
+.palvelu-teksti  { font-size: 0.875rem; color: var(--harmaa); line-height: 1.7; }
+
+/* ────────────────────────────────────────
+   KUVA-ALUEET
+   ──────────────────────────────────────── */
+.esittely-kuva  { aspect-ratio: 4/5;  border-radius: 1rem; overflow: hidden; background: #E8D0CA; }
+.palvelusivu-kuva { aspect-ratio: 16/9; border-radius: 1rem; overflow: hidden; background: #E8D0CA; }
+.palvelukortti-kuva  { aspect-ratio: 4/3;  overflow: hidden; background: #E8D0CA; }
+.hero-tausta { aspect-ratio: 16/7; overflow: hidden; background: #E8D0CA; }
+
+/* ────────────────────────────────────────
+   HERO
+   ──────────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-peitto {
+  position: absolute;
+  inset: 0;
+  background: rgba(44, 26, 26, 0.50);
+}
+
+.hero-sisalto {
+  position: relative;
+  z-index: 10;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.hero-ylateksti {
+  font-size: 0.65rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.hero-otsikko {
+  font-family: var(--fontti-otsikko);
+  font-size: clamp(2.25rem, 6vw, 4.25rem);
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+}
+
+.hero-alaotsikko {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  max-width: 32rem;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.hero-napit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ────────────────────────────────────────
+   SIVUN HERO (alasivut)
+   ──────────────────────────────────────── */
+.sivu-hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  background: var(--vaalea);
+}
+
+/* ────────────────────────────────────────
+   MINUSTA
+   ──────────────────────────────────────── */
+.minusta-teksti p {
+  color: var(--harmaa);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* ────────────────────────────────────────
+   YHTEYSTIEDOT
+   ──────────────────────────────────────── */
+.yhteystiedot-lista { display: flex; flex-direction: column; gap: 1.75rem; }
+
+.yhteystieto-rivi { display: flex; gap: 1rem; align-items: flex-start; }
+
+.yhteystieto-ikoni {
+  width: 2.25rem; height: 2.25rem;
+  border-radius: 999px;
+  background: #E8D0CA;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--pinkki);
+}
+
+.yhteystieto-ikoni svg { width: 1rem; height: 1rem; }
+
+.yhteystieto-otsikko { font-size: 0.875rem; font-weight: 500; margin-bottom: 0.25rem; }
+
+.yhteystieto-arvo {
+  font-size: 0.875rem;
+  color: var(--harmaa);
+  transition: color 0.2s;
+}
+
+.yhteystieto-arvo:hover { color: var(--teksti); }
+
+.some-linkit { display: flex; gap: 0.75rem; margin-top: 0.5rem; }
+
+.some-linkki {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--harmaa);
+  transition: color 0.2s;
+}
+
+.some-linkki svg { width: 0.9rem; height: 0.9rem; color: var(--pinkki); }
+.some-linkki:hover { color: var(--teksti); }
+
+/* ────────────────────────────────────────
+   HINNASTO
+   ──────────────────────────────────────── */
+.hinta-rivi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--reuna);
+}
+
+.hinta-rivi:last-child { border-bottom: none; }
+
+.hinta-palvelu { font-size: 0.95rem; }
+
+.hinta-kesto { font-size: 0.875rem; color: var(--harmaa); margin-left: 0.5rem; }
+
+.hinta-hinta {
+  font-family: var(--fontti-otsikko);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--pinkki);
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.hinta-huomio {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  background: var(--vaalea);
+  border-radius: 1rem;
+  border: 1px solid var(--reuna);
+  font-size: 0.875rem;
+  color: var(--harmaa);
+  line-height: 1.7;
+}
+
+/* ────────────────────────────────────────
+   ARVOSTELUT (karuselli)
+   ──────────────────────────────────────── */
+.arvostelu-kortti {
+  background: var(--kortti);
+  border: 1px solid var(--reuna);
+  border-radius: 1rem;
+  /* Mobiilissa hieman pienempi padding, jotta teksti saa enemmän tilaa leveyssuunnassa */
+  padding: 2rem 1.5rem; 
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(44,26,26,0.05);
+  
+  /* MOBIILIN KORKEUS: Isompi arvo, koska teksti vie enemmän tilaa pystysuunnassa */
+  min-height: 420px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TYÖPÖYTÄVERSIO (yli 768px leveät ruudut) */
+@media (min-width: 768px) { 
+  .arvostelu-kortti { 
+    padding: 3.5rem; 
+    /* Työpöydällä riittää pienempi korkeus, koska teksti on leveämpää */
+    min-height: 350px; 
+  } 
+}
+
+@media (min-width: 768px) { .arvostelu-kortti { padding: 3.5rem; } }
+
+.tahdet {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--pinkki);
+  font-size: 1.1rem;
+  margin-bottom: 1.75rem;
+}
+
+.lainaus {
+  font-family: var(--fontti-otsikko);
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.asiakkaan-nimi {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--harmaa);
+}
+
+.karuselli-napit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.karuselli-nappi {
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--reuna);
+  background: transparent;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+  color: var(--teksti);
+}
+
+.karuselli-nappi:hover { background: var(--vaalea); }
+
+.pisteet { display: flex; gap: 0.5rem; align-items: center; }
+
+.piste {
+  border-radius: 999px;
+  height: 0.5rem; width: 0.5rem;
+  background: var(--reuna);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.piste.aktiivinen { width: 1.25rem; background: var(--pinkki); }
+
+/* ────────────────────────────────────────
+   LOMAKE
+   ──────────────────────────────────────── */
+.lomake-ruudukko {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 640px) { .lomake-ruudukko { grid-template-columns: 1fr; } }
+
+.lomake-ryhma { display: flex; flex-direction: column; gap: 0.5rem; }
+.lomake-ryhma-taysleveys { grid-column: 1 / -1; }
+
+.lomake-otsikko {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--harmaa);
+}
+
+.lomake-kentta,
+.lomake-valinta,
+.lomake-tekstialue {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--reuna);
+  background: var(--kortti);
+  color: var(--teksti);
+  font-size: 0.875rem;
+  font-family: var(--fontti-teksti);
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.lomake-kentta:focus,
+.lomake-valinta:focus,
+.lomake-tekstialue:focus {
+  box-shadow: 0 0 0 3px rgba(184,120,120,0.2);
+}
+
+.lomake-tekstialue { resize: none; }
+
+.kiitos-viesti {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.kiitos-ikoni {
+  font-size: 2.5rem;
+  color: var(--pinkki);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.kiitos-otsikko {
+  font-family: var(--fontti-otsikko);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.kiitos-teksti { color: var(--harmaa); line-height: 1.7; }
+
+.suora-yhteys {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--reuna);
+  text-align: center;
+}
+
+.suora-yhteys p { font-size: 0.875rem; color: var(--harmaa); margin-bottom: 1rem; }
+
+.suora-linkit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.suora-linkki {
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--reuna);
+  font-size: 0.875rem;
+  color: var(--teksti);
+  transition: background 0.2s;
+}
+
+.suora-linkki:hover { background: var(--vaalea); }
+
+/* ────────────────────────────────────────
+   FOOTER
+   ──────────────────────────────────────── */
+.footer {
+  background: var(--teksti);
+  color: #fff;
+  padding: 2.5rem 1.5rem;
+}
+
+.footer-sisalto { max-width: 1152px; margin: 0 auto; }
+
+.footer-ruudukko {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) { .footer-ruudukko { grid-template-columns: 1fr; } }
+
+.footer-logo { font-family: var(--fontti-otsikko); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
+.footer-tagline { font-size: 0.875rem; color: rgba(255,255,255,0.5); }
+
+.footer-otsikko {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 0.75rem;
+}
+
+.footer-linkit { list-style: none; display: flex; flex-direction: column; gap: 0.375rem; }
+
+/* Poistettiin liikkuva transform-efekti, nyt vain väri kirkastuu */
+.footer-linkit a,
+.footer-linkit button,
+.footer-yhteystiedot a {
+  font-family: var(--fontti-teksti);
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.75);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  transition: color 0.2s ease;
+}
+
+.footer-linkit a:hover,
+.footer-linkit button:hover,
+.footer-yhteystiedot a:hover { 
+  color: #fff; 
+}
+
+/* Korjattiin some-kuvakkeiden asettelu siististi linkkien alle vierekkäin */
+.footer-linkit-some { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.25rem; 
+}
+
+.footer-some { 
+  display: flex; 
+  flex-direction: row; 
+  gap: 0.75rem; 
+  margin-top: 0.7rem;
+}
+
+.footer-some-nappi {
+  width: 2rem; height: 2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.55);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer-some-nappi:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+.footer-some-nappi svg { width: 0.875rem; height: 0.875rem; }
+
+.footer-pohja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-copyright { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+
+.footer-lait { display: flex; gap: 1.25rem; }
+
+.footer-lait a {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.3);
+  transition: color 0.2s;
+}
+
+.footer-lait a:hover { color: rgba(255,255,255,0.6); }
