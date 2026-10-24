@@ -29,7 +29,7 @@ export default function Home({ navigate }: Props) {
           playsInline 
           poster="/assets/hero-poster.jpg"
         >
-          <source src="/herovideo.mp4" type="video/mp4" />
+          <source src="herovideo.mp4" type="video/mp4" />
         </video>
         <div className="hero-peitto backdrop-blur-[4px]" />
         <div className="hero-peitto" />

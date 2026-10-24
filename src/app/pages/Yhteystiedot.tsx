@@ -51,7 +51,7 @@ export default function Yhteystiedot({ navigate }: Props) {
                 </p>
                 
                 <p>
-                  Voit käyttää palveluitani erikseen tai yhdistellä niistä juuri sinun elämäntilanteeseesi sopivan kokonaisuuden. Lämpimästi tervetuloa!
+                  Voit käyttää palveluitani erikseen tai yhdistellä niistä juuri sinun elämäntilanteeseesi sopivan kokonaisuuden.
                 </p>
 
                 <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki" style={{ marginTop: "2rem" }}>
