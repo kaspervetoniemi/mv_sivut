@@ -11,7 +11,7 @@ export default function Ajanvaraus() {
       {/* ── PAGE HEADER ── (Ei animoida, jotta näkyy heti) */}
       <div className="sivu-hero">
         <span className="ylateksti">Ajanvaraus</span>
-        <h1 className="otsikko">Varaa aika</h1>
+        <h1 className="otsikko">Ajanvaraus</h1>
         <p
           style={{
             color: "var(--harmaa)",
@@ -56,7 +56,7 @@ export default function Ajanvaraus() {
                 📅
               </div>
 
-              <h2 className="otsikko" style={{ fontSize: "1.6rem", marginBottom: "1rem" }}>
+              <h2 className="otsikko" style={{ fontSize: "1.6rem", margin: "0 auto 1rem" }}>
                 Siirry ajanvarauskalenteriin
               </h2>
 

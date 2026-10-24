@@ -9,16 +9,16 @@ interface Props {
 
 export default function Yhteystiedot({ navigate }: Props) {
   return (
-    <div>   {/* <--- KORJATTU */}
+    <div>
 
       {/* ── PAGE HEADER ── (Ei animoida) */}
       <div className="sivu-hero">
         <span className="ylateksti">Minusta &amp; Yhteystiedot</span>
-        <h1 className="otsikko">Hei, olen Maria</h1>
+        <h1 className="otsikko">Minusta &amp; Yhteystiedot</h1>
       </div>
 
-      {/* ── ABOUT (Minusta - Siirretty ylimmäksi) ── */}
-      <section className="osio osio-pinkki">
+      {/* ── ABOUT (Minusta - Korjattu normaali tausta) ── */}
+      <section className="osio">
         <ScrollReveal>
           <div className="sisalto">
             <div className="ruudukko-2">
@@ -33,10 +33,27 @@ export default function Yhteystiedot({ navigate }: Props) {
 
               <div className="minusta-teksti">
                 <span className="ylateksti">Minusta</span>
-                <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Maria Hannele Viitasalo</h2>
-                <p>Olen koulutettu hermoratahieroja ja ravintovalmentaja, jolla on intohimo auttaa ihmisiä voimaan paremmin. Uskon kokonaisvaltaiseen hyvinvointiin, jossa keho ja mieli toimivat yhdessä.</p>
-                <p>Jokainen asiakas on minulle ainutlaatuinen yksilö, ja räätälöin palveluni aina juuri sinun tarpeisiisi sopiviksi. Tavoitteenani on, että jokainen asiakas lähtee vastaanotoltani voipaan ja kuultuna.</p>
-                <p>Minulle on tärkeää pysyä ajan tasalla alan uusimmista tutkimuksista ja menetelmistä, jotta voin tarjota asiakkailleni parasta mahdollista hoitoa.</p>
+                <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Minusta</h2>
+                
+                <p style={{ fontStyle: "italic", fontWeight: "bold", fontSize: "1.1rem" }}>
+                  "Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen."
+                </p>
+                <p>
+                  Tämä on minun mottoni, ja toivon, että siitä tulee vielä jonain päivänä myös sinun mottosi.
+                </p>
+                
+                <p>
+                  Olen Maria, hermoratahieronnan mestari, psyykkinen valmentaja ja ravintovalmentaja. Muiden hyvinvointi on aina ollut lähellä sydäntäni. Olen työskennellyt palvelualalla vuodesta 1997, viimeisimpänä lähihoitajana vanhuspalveluissa. Nyt autan omassa yrityksessäni ihmisiä huolehtimaan kehostaan, löytämään arkeen sopivia ravitsemustottumuksia ja vahvistamaan luottamusta itseensä. Ravintovalmentajaksi innostuin opiskelemaan oman onnistuneen Cambridge-painonpudotukseni myötä.
+                </p>
+                
+                <p>
+                  Tiedän kokemuksesta, miten helposti omat tarpeet jäävät muiden tarpeiden alle. Minun tuellani saat pysähtyä rauhassa itsesi äärelle: mitä sinä tarvitset, mikä on sinulle tärkeää ja millaisilla pienillä teoilla pääset parhaiten kohti omia tavoitteitasi?
+                </p>
+                
+                <p>
+                  Voit käyttää palveluitani erikseen tai yhdistellä niistä juuri sinun elämäntilanteeseesi sopivan kokonaisuuden. Lämpimästi tervetuloa!
+                </p>
+
                 <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki" style={{ marginTop: "2rem" }}>
                   Varaa aika
                 </button>
@@ -47,13 +64,13 @@ export default function Yhteystiedot({ navigate }: Props) {
         </ScrollReveal>
       </section>
 
-      {/* ── CONTACT & LOCATION (Yhteystiedot & Kartta - Siirretty alimmaiseksi) ── */}
-      <section className="osio osio-vaalea">
+      {/* ── CONTACT & LOCATION (Yhteystiedot & Kartta - Korjattu pinkki tausta) ── */}
+      <section className="osio osio-pinkki">
         <ScrollReveal>
           <div className="sisalto">
             <div className="otsikkoalue">
               <span className="ylateksti">Sijainti &amp; Yhteystiedot</span>
-              <h2 className="otsikko">Yhteystiedot ja sijainti</h2>
+              <h2 className="otsikko">Sijainti &amp; Yhteystiedot</h2>
             </div>
             <div className="ruudukko-2">
 

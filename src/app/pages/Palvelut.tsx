@@ -12,7 +12,7 @@ export default function Palvelut({ navigate }: Props) {
   return (
     <div>
 
-      {/* ── PAGE HEADER ── (Ei animoida, jotta näkyy heti) */}
+      {/* ── PAGE HEADER ── */}
       <div className="sivu-hero">
         <span className="ylateksti">Palvelut</span>
         <h1 className="otsikko">Palvelut</h1>
@@ -22,21 +22,20 @@ export default function Palvelut({ navigate }: Props) {
       <section className="osio osio-vaalea">
         <div className="sisalto">
           {services.map((service, i) => (
-            /* Käärittiin jokainen palvelu omaan ScrollRevealiin! Avain (key) siirrettiin tähän ulompaan tägiin. */
             <ScrollReveal key={service.title}>
               <div
-                id={service.id} /* Linkityksen kohde pysyy tässä */
+                id={service.id}
                 className={`ruudukko-2 ${i % 2 === 0 ? 'kaanna-mobiilissa' : ''}`}
                 style={{ marginBottom: i < services.length - 1 ? "5rem" : "0" }}
               >
                 {i % 2 === 0 ? (
                   /* Even: image left */
                   <>
-                    <div className="kuva-45"><img src={service.img} alt={service.imgAlt} /></div>
+                    <div className="kuva-45"><img src={service.paaKuva} alt={service.imgAlt} /></div>
                     <div>
                       <span className="palvelu-ikoni" style={{ fontSize: "2rem", marginBottom: "1.25rem" }}>{service.icon}</span>
                       <h2 className="otsikko" style={{ marginBottom: "1.25rem" }}>{service.title}</h2>
-                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem" }}>{service.description}</p>
+                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem", whiteSpace: "pre-wrap" }}>{service.description}</p>
                       <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">Varaa aika</button>
                     </div>
                   </>
@@ -46,10 +45,10 @@ export default function Palvelut({ navigate }: Props) {
                     <div>
                       <span className="palvelu-ikoni" style={{ fontSize: "2rem", marginBottom: "1.25rem" }}>{service.icon}</span>
                       <h2 className="otsikko" style={{ marginBottom: "1.25rem" }}>{service.title}</h2>
-                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem" }}>{service.description}</p>
+                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem", whiteSpace: "pre-wrap" }}>{service.description}</p>
                       <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">Varaa aika</button>
                     </div>
-                    <div className="kuva-45"><img src={service.img} alt={service.imgAlt} /></div>
+                    <div className="kuva-45"><img src={service.paaKuva} alt={service.imgAlt} /></div>
                   </>
                 )}
               </div>

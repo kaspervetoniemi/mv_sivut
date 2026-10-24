@@ -358,6 +358,11 @@ a { text-decoration: none; color: inherit; }
   padding: 5rem 1.5rem;
   text-align: center;
   background: var(--vaalea);
+  min-height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ────────────────────────────────────────

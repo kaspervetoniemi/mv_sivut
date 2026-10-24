@@ -8,39 +8,42 @@ export const services = [
     shortDescription: "Kokonaisvaltainen hoitomuoto, joka lievittää kipuja ja laukaisee jännityksiä tehokkaasti.",
     description: "Hermoratahieronta on kokonaisvaltainen hoitomuoto, joka vaikuttaa hermoston kautta koko kehoon. Se lievittää kipuja, laukaisee jännityksiä ja edistää kehon omaa paranemisprosessia. Hoito sopii erinomaisesti pitkäaikaisista kiputiloista tai stressistä kärsiville.",
     icon: "✦",
-    img: "hermoratahieronta1.webp",
+    korttiKuva: "hermoratahieronta1.webp",
+    paaKuva: "hermoratahieronta2.webp",
     imgAlt: "Hieronta kuumakivillä",
-    id: "hermoratahieronta" /* TÄMÄ LISÄTTIIN */
-  },
-  {
-    title: "Purentalihastenhieronta",
-    shortDescription: "Helpotusta leuan alueen kireyksiin, päänsärkyyn ja hampaiden narskuttelusta johtuviin vaivoihin.",
-    description: "Purentalihastenhieronta kohdistuu leuan, kasvojen ja niskan alueelle. Se helpottaa purentakipuja, päänsärkyä ja jännitystiloja, jotka voivat johtua stressistä tai hampaiden narskuttelusta. Käsittely rentouttaa koko pään aluetta ja parantaa unen laatua.",
-    icon: "◈",
-    img: "purentalihashieronta1.webp",
-    imgAlt: "Kasvojen ja leuan alueen hieronta",
-    id: "purentalihas" /* TÄMÄ LISÄTTIIN */
-  },
-  {
-    title: "Psyykkinen valmennus",
-    shortDescription: "Yhdistää ravitsemustiedon ja mielen hyvinvoinnin kohti kestäviä elämäntapoja.",
-    description: "Psyykkinen ravintovalmennus yhdistää ravitsemustiedon ja mielen hyvinvoinnin. Tutkitaan syömisen taustalla olevia tunteita ja ajatusmalleja sekä rakennetaan kestävä suhde ruokaan. Tavoitteena on löytää tasapaino, jossa ruoka tuottaa iloa eikä ahdistusta.",
-    icon: "❋",
-    img: "psyykkinenvalmennus1.webp",
-    imgAlt: "Terveellistä ruokaa lautasella",
-    id: "psyykkinen" /* TÄMÄ LISÄTTIIN */
+    id: "hermoratahieronta" 
   },
   {
     title: "Cambridge-ohjelma",
-    shortDescription: "Kliinisesti tutkittu ja selkeä painonhallintaohjelma, joka tuo pysyviä tuloksia.",
-    description: "Cambridge-ohjelma on kliinisesti tutkittu painonhallintaohjelma, joka tarjoaa selkeän rakenteen ja ammattilaisen tuen matkan varrella. Tuloksia saavutetaan turvallisesti ja kestävästi laadukkaiden ateriankorvikkeiden ja henkilökohtaisen valmennuksen avulla.",
+    shortDescription: "Cambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ateriankorvikkeista. Saat selkeät askeleet painonpudotukseen ja syvällistä tukea pysyvien elämäntapojen rakentamiseen.",
+    description: "Mitä Cambridge-valmennukseni sisältää?\n\nCambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ohjelmaan kuuluvista ateriankorvikkeista (kuten puuroista, keitoista ja pirtelöistä, jotka ostetaan erikseen). Kokonaisuus suunnitellaan aina yksilöllisesti sinun tavoitteidesi ja elämäntilanteesi mukaan.\n\nKäytännössä aloitamme nykytilanteen kartoittamisella: käymme läpi ruokailutottumuksesi, arkesi voimavarat ja mahdolliset terveydelliset rajoitteet. Tämän pohjalta valitsemme sinulle sopivan ohjelmatason, jossa tavallisen ruoan ja Cambridge-aterioiden määrät yhdistyvät fiksusti. Saat selkeät ohjeet siihen, mitä ja kuinka paljon syöt päivän aikana.\n\nMinun valmennuksessani saat valmiin ohjelman lisäksi syvällisempää tukea tapojen muuttamiseen. Tarkastelemme syömisen taustoja ja tunnistamme esimerkiksi tunteiden, stressin ja totuttujen tapojen vaikutuksia valintoihisi. \n\nSäännöllisissä tapaamisissa seuraamme edistymistäsi, ratkomme arjen haasteita ja harjoittelemme painonhallintaa. Tavoitteena on rakentaa pysyviä ruokailutapoja, joita pystyt jatkamaan vaivattomasti myös painonpudotuksen jälkeen — myös kiireessä, viikonloppuina ja silloin, kun kaikki ei mene suunnitelmien mukaan.",
     icon: "◇",
-    img: "cambridge1.webp",
+    korttiKuva: "cambridge1.webp",
+    paaKuva: "cambridge2.webp",
     imgAlt: "Terveellistä hedelmää ja ravintoa",
-    id: "cambridge" /* TÄMÄ LISÄTTIIN */
+    id: "cambridge" 
   },
+  {
+    title: "Psyykkinen valmennus",
+    shortDescription: "Psyykkinen valmennus auttaa tunnistamaan ajatusten ja tunteiden vaikutuksen arjen valintoihin. Opit tekemään pysyviä ja itsellesi tärkeitä elämäntapamuutoksia kestävästi ja itseäsi kuunnellen.",
+    description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
+    icon: "❋",
+    korttiKuva: "psyykkinenvalmennus1.webp",
+    paaKuva: "psyykkinenvalmennus1.webp",
+    imgAlt: "Terveellistä ruokaa lautasella",
+    id: "psyykkinen" 
+  },
+  {
+    title: "Purentalihasten hieronta",
+    shortDescription: "Purentalihasten hieronta rentouttaa leuan, kasvojen ja pään alueen kireyksiä. Se helpottaa tehokkaasti esimerkiksi hampaiden narskuttelusta tai stressistä johtuvaa kipua ja jännitystä.",
+    description: "Mitä purentalihasten hieronta on?\n\nPurentalihasten hieronta on leuan, kasvojen ja pään alueen lihaksia rentouttavaa käsittelyä, jonka tavoitteena on helpottaa lihasjännitystä sekä lievittää kipua ja kireyttä. Hampaiden narskuttelu ja yhteen pureminen voivat kuormittaa purentalihaksia huomattavasti. Tämä jännitys tuntuu usein leukaperien arkuutena, leuan jäykkyytenä tai ohimoiden kireytenä. Oireet voivat korostua erityisesti aamuisin.\n\nHieronnassa käsitellään kasvojen ja ohimoiden aluetta sekä kaulaa ja niska-hartiaseutua. Tarvittaessa purentalihaksia käsitellään myös suun sisäpuolelta poskien kautta, mutta tämä tehdään aina täysin sinun suostumuksellasi. Suun sisäpuolisessa käsittelyssä käytetään hygieniasyistä suojakäsineitä. Käsittely etenee aina rauhallisesti ja yksilöllisesti sinun tuntemuksiasi kuunnellen. Hoidon kesto on 60 minuuttia.\n\nHuomioithan, että pitkittynyt leukakipu, leuan lukkiutuminen tai suun avautumisen rajoittuminen edellyttävät aina ensin hammaslääkärin arviota.",
+    icon: "◈",
+    korttiKuva: "purentalihashieronta1.webp",
+    paaKuva: "purentalihashieronta1.webp",
+    imgAlt: "Kasvojen ja leuan alueen hieronta",
+    id: "purentalihas" 
+  }
 ];
-
 // ... hinnasto (prices) ja arvostelut (testimonials) jatkuvat tästä normaalisti ...
 
 export const prices = [

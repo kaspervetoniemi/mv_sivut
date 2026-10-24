@@ -53,9 +53,15 @@ export default function Home({ navigate }: Props) {
             <div className="ruudukko-2">
               <div className="minusta-teksti">
                 <span className="ylateksti">Minusta</span>
-                <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Hei, olen Maria Hannele Viitasalo</h2>
-                <p>Olen koulutettu hermoratahieroja ja ravintovalmentaja, jolla on intohimo auttaa ihmisiä voimaan paremmin. Uskon kokonaisvaltaiseen hyvinvointiin, jossa keho ja mieli toimivat yhdessä.</p>
-                <p>Jokainen asiakas on minulle ainutlaatuinen yksilö, ja räätälöin palveluni aina juuri sinun tarpeisiisi sopiviksi.</p>
+                <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Minusta</h2>
+                
+                <p style={{ fontStyle: "italic", fontWeight: "bold", fontSize: "1.1rem", marginBottom: "1rem" }}>
+                  "Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen."
+                </p>
+                <p>
+                  Olen Maria, hermoratahieronnan mestari, psyykkinen valmentaja ja ravintovalmentaja. Tiedän, miten helposti omat tarpeet jäävät arjessa muiden jalkoihin. Siksi autan ihmisiä huolehtimaan kehostaan, löytämään arkeen sopivia ravitsemustottumuksia ja vahvistamaan luottamusta itseensä. Minun tuellani saat turvallisen hetken pysähtyä itsesi äärelle ja kysyä: mitä sinä tarvitset ja mikä on sinulle tärkeää?
+                </p>
+
                 <button onClick={() => navigate("yhteystiedot")} className="nappi nappi-pinkki" style={{ marginTop: "2rem" }}>
                   Lue lisää
                 </button>
@@ -98,7 +104,8 @@ export default function Home({ navigate }: Props) {
                   }}
                 >
                   <div className="palvelukortti-kuva">
-                    <img src={service.img} alt={service.imgAlt} />
+                    {/* TÄSSÄ MUUTOS: service.img -> service.korttiKuva */}
+                    <img src={service.korttiKuva} alt={service.imgAlt} />
                   </div>
                   <div className="kortti-sisalto">
                     <span className="palvelu-ikoni">{service.icon}</span>
@@ -124,7 +131,7 @@ export default function Home({ navigate }: Props) {
           <div className="sisalto-keski">
             <div className="otsikkoalue">
               <span className="ylateksti">Asiakkaiden kertomaa</span>
-              <h2 className="otsikko">Mitä asiakkaat sanovat</h2>
+              <h2 className="otsikko">Asiakkaiden kertomaa</h2>
             </div>
             <div className="arvostelu-kortti">
               <div className="tahdet">{"★".repeat(review.rating)}</div>
@@ -154,7 +161,7 @@ export default function Home({ navigate }: Props) {
           <div className="sisalto">
             <div className="otsikkoalue">
               <span className="ylateksti">Sijainti</span>
-              <h2 className="otsikko">Löydä minut</h2>
+              <h2 className="otsikko">Sijainti</h2>
             </div>
             <div className="ruudukko-2">
               
