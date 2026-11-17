@@ -2,6 +2,7 @@
 
 // Shared data and components used across pages
 
+// PALVELUT OSIO 
 export const services = [
   {
     title: "Hermoratahieronta",
@@ -85,8 +86,19 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     id: "purentalihas" 
   }
 ];
-// ... hinnasto (prices) ja arvostelut (testimonials) jatkuvat tästä normaalisti ...
 
+// MINUSTA KOHDAN KOULUTUKSET
+export const koulutukset = [
+  { tutkinto: "Hermoratahieronnan mestari", vuosi: "2026", oppilaitos: "Pohjois-Pohjanmaan hermoratahierontaopisto" },
+  { tutkinto: "Valmentaja", vuosi: "2026", oppilaitos: "The 1:1 Diet by Cambridge Weight Plan" },
+  { tutkinto: "Psyykkinen ravintovalmentaja", vuosi: "2026", oppilaitos: "Impulssi" },
+  { tutkinto: "Ravintovalmentaja", vuosi: "2026", oppilaitos: "Trainer4You" },
+  { tutkinto: "Psyykkinen valmentaja", vuosi: "2026", oppilaitos: "Peltonen Performance" },
+  { tutkinto: "Hermoratahieroja", vuosi: "2025", oppilaitos: "Pohjois-Pohjanmaan hermoratahierontaopisto" },
+  { tutkinto: "Lähihoitaja", vuosi: "2017", oppilaitos: "JEDU" }
+];
+
+// HINNASTO (prices) 
 export const prices = [
   { service: "Hermoratahieronta", duration: "120 min", price: "85 €" },
   { service: "Purentalihastenhieronta", duration: "60 min", price: "55 €" },
@@ -96,6 +108,7 @@ export const prices = [
   { service: "Psyykkinenvalmennus", duration: "90 min", price: "100 €" },
 ];
 
+// ASIAKASPALAUTTEET (testimonials)
 export const testimonials = [
   {
     name: "Mies 50v",

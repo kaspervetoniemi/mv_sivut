@@ -2,6 +2,7 @@
 
 import type { Page } from "../App";
 import ScrollReveal from "../ScrollReveal"; // Tuodaan animaatiokomponentti
+import { koulutukset } from "../shared";
 
 interface Props {
   navigate: (p: Page) => void;
@@ -53,6 +54,17 @@ export default function Yhteystiedot({ navigate }: Props) {
                 <p>
                   Voit käyttää palveluitani erikseen tai yhdistellä niistä juuri sinun elämäntilanteeseesi sopivan kokonaisuuden.
                 </p>
+
+                <h3 className="otsikko" style={{ fontSize: "1.25rem", marginTop: "1.75rem", marginBottom: "0.75rem" }}>
+                  Koulutukseni
+                </h3>
+                <ul style={{ color: "var(--harmaa)",paddingLeft: "1.25rem", lineHeight: "1.8", listStyleType: "disc" }}>
+                  {koulutukset.map((item, idx) => (
+                    <li key={idx}>
+                      {item.tutkinto}, {item.vuosi} ({item.oppilaitos})
+                    </li>
+                  ))}
+                </ul>
 
                 <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki" style={{ marginTop: "2rem" }}>
                   Varaa aika

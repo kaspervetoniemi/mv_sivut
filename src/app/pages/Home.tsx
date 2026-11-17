@@ -4,6 +4,7 @@ import { useState } from "react";
 import { services, testimonials } from "../shared";
 import type { Page } from "../App";
 import ScrollReveal from "../ScrollReveal";
+import { koulutukset } from "../shared";
 
 interface Props {
   navigate: (p: Page) => void;
