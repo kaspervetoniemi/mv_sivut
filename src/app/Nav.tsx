@@ -28,8 +28,8 @@ export default function Nav({ page, navigate }: Props) {
       <div className="nav-sisalto">
 
         {/* Logo */}
-        <button className="nav-logo" onClick={() => handleNav("home")}>
-          Tmi Maria Viitasalo
+        <button className="nav-logo" onClick={() => handleNav("home")} aria-label="Etusivulle">
+          <img src="mv_logo_lapinakuva2.png" alt="Tmi Maria Viitasalo" />
         </button>
 
         {/* Desktop links */}

@@ -1,10 +1,10 @@
 // @ts-nocheck
 
-import { useState } from "react";
 import { services, testimonials } from "../shared";
 import type { Page } from "../App";
 import ScrollReveal from "../ScrollReveal";
 import { koulutukset } from "../shared";
+import { useState, useRef, useEffect } from 'react';
 
 interface Props {
   navigate: (p: Page) => void;
@@ -13,6 +13,14 @@ interface Props {
 export default function Home({ navigate }: Props) {
   const [reviewIndex, setReviewIndex] = useState(0);
   const review = testimonials[reviewIndex];
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.75; // Säädä nopeutta tarvittaessa (esim. 0.6 tai 0.7)
+    }
+  }, []);
 
   function prevReview() { setReviewIndex(i => i === 0 ? testimonials.length - 1 : i - 1); }
   function nextReview() { setReviewIndex(i => i === testimonials.length - 1 ? 0 : i + 1); }
@@ -23,6 +31,7 @@ export default function Home({ navigate }: Props) {
       {/* ── HERO ── (Tätä ei animoida ScrollRevealilla, jotta se näkyy heti kun sivu aukeaa) */}
       <section className="hero">
         <video 
+          ref={videoRef}
           className="hero-video" 
           autoPlay 
           muted 

@@ -22,10 +22,21 @@ export default function Footer({ navigate }: Props) {
 
           {/* Column 1 — branding */}
           <div>
-            <p className="footer-logo">Tmi Maria Viitasalo</p>
+            <button
+              type="button"
+              onClick={() => navigate("home")}
+              className="footer-logo-nappi"
+              aria-label="Etusivulle"
+            >
+              <img
+                src="mv_logo_lapinakuva2.png"
+                alt="Tmi Maria Viitasalo"
+                className="footer-logo-kuva"
+              />
+            </button>
             <p className="footer-tagline">
-              Hermoratahieronnan mestari,<br/>
-              ravintovalmentaja &amp; <br/>
+              Hermoratahieronnan mestari,<br />
+              ravintovalmentaja &amp; <br />
               psyykkinen valmentaja
             </p>
           </div>
@@ -82,12 +93,37 @@ export default function Footer({ navigate }: Props) {
 
         </div>
 
+        {/* Kumppanilogot */}
+        <div className="footer-kumppanit">
+          <a
+            href="https://www.hermoratahieronnanmestarit.fi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Hermoratahieronnan mestarit ry"
+          >
+            <img src="hrhry_logo.png" alt="Hermoratahieronnan mestarit ry" />
+          </a>
+
+          <a
+            href="https://www.one2onediet.fi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="The 1:1 Diet by Cambridge Weight Plan"
+          >
+            <img
+              src="one2onediet_logo.png"
+              alt="The 1:1 Diet – One2Onediet.fi"
+              className="one2one-kuva"
+            />
+          </a>
+        </div>
+
         {/* Bottom bar */}
         <div className="footer-pohja">
           <p className="footer-copyright">Tmi Maria Hannele Viitasalo | Made by Kasper Vetoniemi</p>
           <div className="footer-lait">
             <a href="#">Tietosuojaseloste</a>
-            <a href="#">Evästeasetukset</a>
+            <a href="#"></a>
           </div>
         </div>
 
