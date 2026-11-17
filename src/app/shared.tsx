@@ -5,19 +5,60 @@
 export const services = [
   {
     title: "Hermoratahieronta",
-    shortDescription: "Kokonaisvaltainen hoitomuoto, joka lievittää kipuja ja laukaisee jännityksiä tehokkaasti.",
-    description: "Hermoratahieronta on kokonaisvaltainen hoitomuoto, joka vaikuttaa hermoston kautta koko kehoon. Se lievittää kipuja, laukaisee jännityksiä ja edistää kehon omaa paranemisprosessia. Hoito sopii erinomaisesti pitkäaikaisista kiputiloista tai stressistä kärsiville.",
+    shortDescription: "Hermoratahieronta on kokonaisvaltaista hierontaa päästä varpaisiin. Auttaa kehon kipu- ja särkytiloihin sekä rauhoittaa kehoa ja mieltä. Sopii vauvasta vaariin.",
+    description: `Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa ja kehon ääreishermoston käsittelyä. Hoidolla kuntoutetaan ääreishermostoa toimimaan niin, että keskushermosto saadaan toimimaan tehokkaasti ja aivot tekemään tehtäväänsä.
+
+Hermoratahieronta elvyttää, puhdistaa ja kuntouttaa. Se on tehokas tukihoito perinteisen koululääketieteen rinnalla ja auttaa kehoa saavuttamaan tasapainotilan, jolloin sen puolustuskyky paranee, ravinteiden imeytyminen tehostuu, erityselinten toiminta paranee ja hormonitoiminta tasoittuu.
+
+Hermoratahieronnassa ei käytetä öljyjä, ja olet hoidon aikana omissa vaatteissasi (suosittelemme kevyitä housuja, pitkähihaista ohutta paitaa ja sukkia). Hieronta tehdään koko keholle päästä varpaisiin painavilla, pyörittävillä otteilla. Hoito ei ole kivuliasta, mutta voit huomata kehossasi arkoja paikkoja. Hieronta on hyvin rauhoittavaa, ja halutessasi voit vaikka nukahtaa kesken hoidon. Hoidon kesto on noin 2 tuntia, lapsilla aika voi olla lyhyempi.
+
+Hermoratahieronta auttaa lihasvaivoihin, useimpiin kroonisiin sairauksiin sekä kipu- ja särkytiloihin, minkä lisäksi se rentouttaa syvästi mieltä ja kehoa.`,
+    listTitle: "Hermoratahieronta auttaa muun muassa seuraavissa vaivoissa:",
+    listItems: [
+      "Niska-, hartia- ja selkäkivut",
+      "Allergia ja astma",
+      "Reuma ja fibromyalgia",
+      "Päänsärky ja migreeni",
+      "Ruoansulatushäiriöt ja vatsavaivat",
+      "Kilpirauhasen toimintahäiriöt",
+      "Sydäntaudit",
+      "Munuaistaudit, maksavaivat ja hormonaaliset vaivat",
+      "Rappeutumissairaudet",
+      "Unettomuus, stressi, uupumus ja mielen vaivat",
+      "Määrittelemättömät kivut tai vaivat, joita niin sanottu koululääketiede ei ole voinut diagnosoida"
+    ],
+    contraindicationsTitle: "Esteet ja varoajat hermoratahieronnalle:",
+    contraindications: [
+      "Raskaana olevat",
+      "Elinsiirron saaneet henkilöt",
+      "Syöpäpotilaat, joille on tehty kantasolusiirto",
+      "Akuutti kuume, flunssa tai vatsatauti",
+      "Avoleikkaus: 2 kuukauden varoaika",
+      "Tähystys vatsan alueelle tai päähän: 2 kuukauden varoaika",
+      "Muu tähystysleikkaus: 3–4 viikkoa",
+      "Hammasleikkaus: 4–6 viikkoa",
+      "Ohutneulanäyte: 3 viikkoa",
+      "Kipsi (jos jouduttu leikkaamaan): 2 kuukautta",
+      "Luomenpoisto: hoidetaan vasta tikkien poiston jälkeen",
+      "Sydämentahdistin ei ole este hoidolle"
+    ],
+    note: "Kerrothan aina valmentajalle, jos sinulla on suonikohjuja.",
     icon: "✦",
     korttiKuva: "hermoratahieronta1.webp",
     paaKuva: "hermoratahieronta2.webp",
     imgAlt: "Hieronta kuumakivillä",
-    id: "hermoratahieronta" 
+    id: "hermoratahieronta"
   },
   {
     title: "Cambridge-ohjelma",
-    shortDescription: "Cambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ateriankorvikkeista. Saat selkeät askeleet painonpudotukseen ja syvällistä tukea pysyvien elämäntapojen rakentamiseen.",
-    description: "Mitä Cambridge-valmennukseni sisältää?\n\nCambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ohjelmaan kuuluvista ateriankorvikkeista (kuten puuroista, keitoista ja pirtelöistä, jotka ostetaan erikseen). Kokonaisuus suunnitellaan aina yksilöllisesti sinun tavoitteidesi ja elämäntilanteesi mukaan.\n\nKäytännössä aloitamme nykytilanteen kartoittamisella: käymme läpi ruokailutottumuksesi, arkesi voimavarat ja mahdolliset terveydelliset rajoitteet. Tämän pohjalta valitsemme sinulle sopivan ohjelmatason, jossa tavallisen ruoan ja Cambridge-aterioiden määrät yhdistyvät fiksusti. Saat selkeät ohjeet siihen, mitä ja kuinka paljon syöt päivän aikana.\n\nMinun valmennuksessani saat valmiin ohjelman lisäksi syvällisempää tukea tapojen muuttamiseen. Tarkastelemme syömisen taustoja ja tunnistamme esimerkiksi tunteiden, stressin ja totuttujen tapojen vaikutuksia valintoihisi. \n\nSäännöllisissä tapaamisissa seuraamme edistymistäsi, ratkomme arjen haasteita ja harjoittelemme painonhallintaa. Tavoitteena on rakentaa pysyviä ruokailutapoja, joita pystyt jatkamaan vaivattomasti myös painonpudotuksen jälkeen — myös kiireessä, viikonloppuina ja silloin, kun kaikki ei mene suunnitelmien mukaan.",
-    icon: "◇",
+    shortDescription: "Yksi Suomen suosituimmista painonpudotusohjelmista! Sadat onnistumistarinat kertovat puolestaan. Saat henkilökohtaisen valmentajan, maistuvat laadukkaat ateriankorvikkeemme ja siihen rinnalle maistuvan tavallisen ruoan. Opettele heti alusta saakka viikko viikolta, mitä lautasmalli ja säännöllinen syöminen ovat. Valmentaja on tukenasi viikoittain joko lähi- tai etävalmennuksena.",
+description: `Cambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ohjelmaan kuuluvista ateriankorvikkeista (kuten puuroista, keitoista, pirtelöistä ja patukoista). Kokonaisuus suunnitellaan aina yksilöllisesti sinun tavoitteidesi ja elämäntilanteesi mukaan.
+
+Käytännössä aloitamme nykytilanteen kartoittamisella: käymme läpi ruokailutottumuksesi, arkesi voimavarat ja mahdolliset terveydelliset rajoitteet. Tämän pohjalta valitsemme sinulle sopivan ohjelmatason, jossa tavallisen ruoan ja Cambridge-aterioiden määrät yhdistyvät fiksusti. Saat selkeät ohjeet siihen, mitä ja kuinka paljon syöt päivän aikana. Minun valmennuksessani saat valmiin ohjelman lisäksi syvällisempää tukea tapojen muuttamiseen. Tarkastelemme syömisen taustoja ja tunnistamme esimerkiksi tunteiden, stressin ja totuttujen tapojen vaikutuksia valintoihisi.
+
+Säännöllisissä tapaamisissa seuraamme edistymistäsi, ratkomme arjen haasteita ja harjoittelemme painonhallintaa. Tavoitteena on rakentaa pysyviä ruokailutapoja, joita pystyt jatkamaan vaivattomasti myös painonpudotuksen jälkeen – kiireessä, viikonloppuina ja silloin, kun kaikki ei mene suunnitelmien mukaan. Tavoitteena on pysyvien tulosten saavuttaminen säännöllisen henkilökohtaisen valmennuksen avulla. Laihduttajalle suunnitellut ateriankorvikkeet ja tavallinen terveellinen ruoka luovat yhdessä helpon ja yksinkertaisen pohjan ruokavaliollesi, ja ohjelman edetessä saat opetella rauhassa annoskokoja, ateriarytmiä ja valintoja.
+
+Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateriankorvikkeet joka viikolle valitun tason mukaan, ja saat ohjeet niiden ostoon valmentajaltasi. Valmennus voidaan toteuttaa joko lähivalmennuksena Toholammilla tai Kokkolassa, tai etänä sinne, missä olet. Kannukseen ajanvaraus sopimuksen mukaan. Voit varata 30 minuutin ilmaisen tutustumisen ajanvarauskalenteristani tai suoraan startin. Soittopyynnön jättäneelle soitan takaisin.`,    icon: "◇",
     korttiKuva: "cambridge1.webp",
     paaKuva: "cambridge2.webp",
     imgAlt: "Terveellistä hedelmää ja ravintoa",
@@ -25,7 +66,7 @@ export const services = [
   },
   {
     title: "Psyykkinen valmennus",
-    shortDescription: "Psyykkinen valmennus auttaa tunnistamaan ajatusten ja tunteiden vaikutuksen arjen valintoihin. Opit tekemään pysyviä ja itsellesi tärkeitä elämäntapamuutoksia kestävästi ja itseäsi kuunnellen.",
+    shortDescription: "Mitä olet valmis tekemään, jotta saavutat unelmasi? Jos olet ikuinen painonpudottaja ja nyt tiedät, että se sama, mitä olet toistanut tai aloittanut maanantaisin, ei toimi, voi psyykkinen valmennus olla ratkaisusi. Mikään unelma tai tavoite ei ole saavutettavissa ennen kuin oikeasti tiedät, mihin pystyt ja mitä oikeasti voit arjessasi tehdä unelmasi eteen.",
     description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
     icon: "❋",
     korttiKuva: "psyykkinenvalmennus1.webp",

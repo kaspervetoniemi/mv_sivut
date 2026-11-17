@@ -18,42 +18,96 @@ export default function Palvelut({ navigate }: Props) {
         <h1 className="otsikko">Palvelut</h1>
       </div>
 
-      {/* ── SERVICE LIST — alternating image sides ── */}
+   {/* ── SERVICE LIST — alternating image sides ── */}
       <section className="osio osio-vaalea">
         <div className="sisalto">
-          {services.map((service, i) => (
-            <ScrollReveal key={service.title}>
-              <div
-                id={service.id}
-                className={`ruudukko-2 ${i % 2 === 0 ? 'kaanna-mobiilissa' : ''}`}
-                style={{ marginBottom: i < services.length - 1 ? "5rem" : "0" }}
-              >
-                {i % 2 === 0 ? (
-                  /* Even: image left */
-                  <>
-                    <div className="kuva-45"><img src={service.paaKuva} alt={service.imgAlt} /></div>
-                    <div>
-                      <span className="palvelu-ikoni" style={{ fontSize: "2rem", marginBottom: "1.25rem" }}>{service.icon}</span>
-                      <h2 className="otsikko" style={{ marginBottom: "1.25rem" }}>{service.title}</h2>
-                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem", whiteSpace: "pre-wrap" }}>{service.description}</p>
-                      <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">Varaa aika</button>
-                    </div>
-                  </>
-                ) : (
-                  /* Odd: image right */
-                  <>
-                    <div>
-                      <span className="palvelu-ikoni" style={{ fontSize: "2rem", marginBottom: "1.25rem" }}>{service.icon}</span>
-                      <h2 className="otsikko" style={{ marginBottom: "1.25rem" }}>{service.title}</h2>
-                      <p style={{ color: "var(--harmaa)", lineHeight: "1.8", marginBottom: "2rem", whiteSpace: "pre-wrap" }}>{service.description}</p>
-                      <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">Varaa aika</button>
-                    </div>
-                    <div className="kuva-45"><img src={service.paaKuva} alt={service.imgAlt} /></div>
-                  </>
+          {services.map((service, i) => {
+            const onLisalistoja = Boolean(service.listItems || service.contraindications);
+            const onViimeinen = i === services.length - 1;
+
+            const paaTeksti = (
+              <div>
+                <span className="palvelu-ikoni">{service.icon}</span>
+                <h2 className="otsikko">{service.title}</h2>
+                <p className="palvelu-kuvaus">{service.description}</p>
+                {!onLisalistoja && (
+                  <div className="palvelu-toiminnot">
+                    <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">
+                      Varaa aika
+                    </button>
+                  </div>
                 )}
               </div>
-            </ScrollReveal>
-          ))}
+            );
+
+            return (
+              <ScrollReveal key={service.title}>
+                <div
+                  id={service.id}
+                  className={`palvelu-lohko ${onViimeinen ? "palvelu-lohko--viimeinen" : ""}`}
+                >
+                  <div className={`ruudukko-2 ${i % 2 === 0 ? "kaanna-mobiilissa" : ""}`}>
+                    {i % 2 === 0 ? (
+                      <>
+                        <div className="kuva-45">
+                          <img src={service.paaKuva} alt={service.imgAlt} />
+                        </div>
+                        {paaTeksti}
+                      </>
+                    ) : (
+                      <>
+                        {paaTeksti}
+                        <div className="kuva-45">
+                          <img src={service.paaKuva} alt={service.imgAlt} />
+                        </div>
+                      </>
+                    )}
+                  </div>
+
+                  {onLisalistoja && (
+                    <>
+                      <div className="ruudukko-2 palvelu-lisatiedot">
+                        {service.listItems && (
+                          <div>
+                            {service.listTitle && (
+                              <h3 className="otsikko palvelu-alaotsikko">{service.listTitle}</h3>
+                            )}
+                            <ul className="palvelu-lista">
+                              {service.listItems.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
+                        {service.contraindications && (
+                          <div>
+                            {service.contraindicationsTitle && (
+                              <h3 className="otsikko palvelu-alaotsikko">
+                                {service.contraindicationsTitle}
+                              </h3>
+                            )}
+                            <ul className="palvelu-lista">
+                              {service.contraindications.map((item, idx) => (
+                                <li key={idx}>{item}</li>
+                              ))}
+                            </ul>
+                            {service.note && <p className="palvelu-huomio">{service.note}</p>}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="palvelu-toiminnot">
+                        <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">
+                          Varaa aika
+                        </button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </ScrollReveal>
+            );
+          })}
         </div>
       </section>
 
