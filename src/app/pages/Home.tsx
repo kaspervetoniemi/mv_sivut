@@ -5,6 +5,7 @@ import type { Page } from "../App";
 import ScrollReveal from "../ScrollReveal";
 import { koulutukset } from "../shared";
 import { useState, useRef, useEffect } from 'react';
+import Popup from "../Popup";
 
 interface Props {
   navigate: (p: Page) => void;
@@ -27,7 +28,7 @@ export default function Home({ navigate }: Props) {
 
   return (
     <div>
-
+      <Popup navigate={navigate} />
       {/* ── HERO ── (Tätä ei animoida ScrollRevealilla, jotta se näkyy heti kun sivu aukeaa) */}
       <section className="hero">
         <video 

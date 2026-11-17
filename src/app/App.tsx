@@ -8,13 +8,14 @@ import Yhteystiedot from "./pages/Yhteystiedot";
 import Ajanvaraus from "./pages/Ajanvaraus";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import Ryhmavalmennukset from "./pages/Ryhmavalmennukset";
 
-export type Page = "home" | "palvelut" | "hinnasto" | "yhteystiedot" | "ajanvaraus";
+export type Page = "home" | "palvelut" | "hinnasto" | "yhteystiedot" | "ajanvaraus" | "ryhmavalmennukset";
 
 export default function App() {
   const [page, setPage] = useState<Page>("home");
 
-  function navigate(p: Page) {
+ function navigate(p: Page) {
     setPage(p);
     window.scrollTo(0, 0);
   }
@@ -28,9 +29,9 @@ export default function App() {
         {page === "palvelut"     && <Palvelut       navigate={navigate} />}
         {page === "hinnasto"     && <Hinnasto        navigate={navigate} />}
         {page === "yhteystiedot" && <Yhteystiedot   navigate={navigate} />}
-        {page === "ajanvaraus"   && <Ajanvaraus />}
+        {page === "ryhmavalmennukset" && <Ryhmavalmennukset navigate={navigate} />}
+        {page === "ajanvaraus"   && <Ajanvaraus navigate={navigate} />}
       </main>
-
       <Footer navigate={navigate} />
     </div>
   );

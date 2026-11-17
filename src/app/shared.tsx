@@ -136,3 +136,45 @@ export const testimonials = [
     rating: 5,
   },
 ];
+
+export interface RyhmavalmennusItem {
+  id: string;
+  icon: string;
+  title: string;
+  text: string;
+  datesTitle?: string;
+  dates: string[];
+  infoUrl?: string;
+}
+
+export const ryhmavalmennukset: RyhmavalmennusItem[] = [
+  {
+    id: "lyhytohjelma-kevat-2027",
+    icon: "◇",
+    title: "4 viikon lyhytohjelma – ryhmävalmennus",
+    text: "Ryhmävalmennukset vuonna 2027 alkavat tammikuussa! Painonpudottajille suunnattu 4 viikon lyhytohjelma -ryhmävalmennus toteutetaan etänä Teams-palvelun kautta. Neljä viikkoa kestävässä ohjelmassa käydään läpi tasot 1–3, ja se sisältää 5 valmennusta, ateriankorvikkeet ohjelman mukaan sekä ruokaohjeistuksen. Tarkemmat ohjeet valmennukseen ja tuotteiden ostoon saat ilmoittautumisen jälkeen – ilmoittautuminen tapahtuu suoraan viereisestä ajanvarauskalenterista.",
+    datesTitle: "Aloitusajankohdat",
+    dates: [
+      "Torstai 14.1. klo 18",
+      "Torstai 28.1. klo 18",
+      "Tiistai 30.3. klo 18",
+    ],
+    infoUrl: "https://one2one.fi",
+  },
+];
+
+export const etusivuPopup = {
+  aktiivinen: true,
+  viiveMs: 4000,
+  ylateksti: "Ajankohtaista",
+  otsikko: "Cambridge-valmennus – ilmoittaudu mukaan",
+  teksti:
+    "Tähän päivitetään tarkempi esittelyteksti valmennuksesta. Tutustu ryhmävalmennuksiin tarkemmin tai jätä ilmoittautumisesi suoraan alta.",
+  lueLisaaTeksti: "Lue lisää ryhmävalmennuksista →",
+  valmennuksenNimi: "4 viikon lyhytohjelma – ryhmävalmennus",
+  valintaruutuTeksti: "Ilmoittaudun mukaan valmennukseen.",
+  nappiTeksti: "Lähetä ilmoittautuminen",
+  kiitosTeksti: "Kiitos ilmoittautumisestasi! Olen sinuun yhteydessä pian.",
+  suljeKokonaanTeksti: "Sulje ilmoitus kokonaan",
+  lomakeUrl: "",
+};
