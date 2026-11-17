@@ -24,12 +24,31 @@ export default function Palvelut({ navigate }: Props) {
           {services.map((service, i) => {
             const onLisalistoja = Boolean(service.listItems || service.contraindications);
             const onViimeinen = i === services.length - 1;
-
-            const paaTeksti = (
-              <div>
-                <span className="palvelu-ikoni">{service.icon}</span>
-                <h2 className="otsikko">{service.title}</h2>
-                <p className="palvelu-kuvaus">{service.description}</p>
+           const paaTeksti = (
+  <div>
+    <span className="palvelu-ikoni">{service.icon}</span>
+    <h2 className="otsikko">{service.title}</h2>
+    <p className="palvelu-kuvaus">{service.description}</p>
+    
+   {service.id === "cambridge" && (
+      <p className="palvelu-kuvaus" style={{ marginTop: "1rem" }}>
+        Voit lukea onnistumistarinoita ja Cambridge-valmennuksesta lisää{" "}
+        <a
+          href="https://one2onediet.fi/onnistujat/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "inherit",
+            fontWeight: 600,
+            textDecoration: "underline",
+            textUnderlineOffset: "3px",
+          }}
+        >
+          täältä
+        </a>
+        .
+      </p>
+    )}
                 {!onLisalistoja && (
                   <div className="palvelu-toiminnot">
                     <button onClick={() => navigate("ajanvaraus")} className="nappi nappi-pinkki">
