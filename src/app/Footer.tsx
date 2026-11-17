@@ -20,7 +20,17 @@ export default function Footer({ navigate }: Props) {
       <div className="footer-sisalto">
         <div className="footer-ruudukko">
 
-          {/* Column 1 — branding */}
+          {/* Column 1 — contact */}
+          <div>
+            <p className="footer-otsikko">Yhteystiedot</p>
+            <div className="footer-yhteystiedot">
+              <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Lampintie 2, 69300 Toholampi</p>
+              <p><a href="mailto:maria.viitasalo@cambridgeohjelma.fi">maria.viitasalo@cambridgeohjelma.fi</a></p>
+              <p><a href="tel:+358458402788">045 840 2788</a></p>
+            </div>
+          </div>
+
+          {/* Column 2 — branding (keskellä) */}
           <div>
             <button
               type="button"
@@ -40,17 +50,6 @@ export default function Footer({ navigate }: Props) {
               psyykkinen valmentaja
             </p>
           </div>
-
-          {/* Column 2 — contact */}
-          <div>
-            <p className="footer-otsikko">Yhteystiedot</p>
-            <div className="footer-yhteystiedot">
-              <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Lampintie 2, 69300 Toholampi</p>
-              <p><a href="mailto:maria.viitasalo@cambridgeohjelma.fi">maria.viitasalo@cambridgeohjelma.fi</a></p>
-              <p><a href="tel:+358458402788">045 840 2788</a></p>
-            </div>
-          </div>
-
 {/* Column 3 — links + social */}
           <div>
             <p className="footer-otsikko">Linkit</p>

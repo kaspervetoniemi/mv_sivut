@@ -13,6 +13,7 @@ const links: { label: string; page: Page }[] = [
   { label: "Palvelut",     page: "palvelut" },
   { label: "Hinnasto",     page: "hinnasto" },
   { label: "Yhteystiedot", page: "yhteystiedot" },
+  { label: "Ryhmävalmennukset", page: "ryhmavalmennukset" },
 ];
 
 export default function Nav({ page, navigate }: Props) {

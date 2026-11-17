@@ -45,7 +45,7 @@ export default function Home({ navigate }: Props) {
         <div className="hero-peitto" />
         <div className="hero-sisalto">
           <span className="hero-ylateksti">Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.</span>
-          <h1 className="hero-otsikko">Yksilöllistä valmennusta elämäntapamuutokseen sekä kehon kipu- ja särkytilojen hoitoon</h1>
+          <h1 className="hero-otsikko">Yksilöllistä valmennusta elämäntapamuutokseen sekä hierontaa kehon kipu- ja särkytilojen hoitoon</h1>
           <p className="hero-alaotsikko">
             Ravintovalmennus | Psyykkinen valmennus | Hermoratahieronta | Purentalihasten hieronta
           </p>
