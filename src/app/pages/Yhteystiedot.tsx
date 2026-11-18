@@ -3,12 +3,15 @@
 import type { Page } from "../App";
 import ScrollReveal from "../ScrollReveal"; // Tuodaan animaatiokomponentti
 import { koulutukset } from "../shared";
+import { useState } from "react";
 
 interface Props {
   navigate: (p: Page) => void;
 }
 
 export default function Yhteystiedot({ navigate }: Props) {
+  const [naytaKartta, setNaytaKartta] = useState(false);
+
   return (
     <div>
 
@@ -134,7 +137,7 @@ export default function Yhteystiedot({ navigate }: Props) {
                   </div>
                   <div>
                     <p className="yhteystieto-otsikko">Y-tunnus</p>
-                    <p className="yhteystieto-arvo">1234567-8</p>
+                    <p className="yhteystieto-arvo">3360168-9</p>
                   </div>
                 </div>
                 
@@ -174,15 +177,46 @@ export default function Yhteystiedot({ navigate }: Props) {
 
               {/* KARTTA OIKEALLA */}
               <div style={{ borderRadius: "1rem", overflow: "hidden", border: "1px solid var(--reuna)", height: "100%", minHeight: "350px" }}>
-                <iframe 
-                  title="Sijainti kartalla"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.275172101446!2d24.248871207733032!3d63.77358692121012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4686d33eaf9ba8f5%3A0xff95c21334a71fc6!2sHermoratahieroja%20Maria%20Viitasalo!5e1!3m2!1sfi!2sfi!4v1792798955853!5m2!1sfi!2sfi"                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0, display: "block", minHeight: "350px" }} 
-                  allowFullScreen={true} 
-                  loading="lazy" 
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
+               {naytaKartta ? (
+                 <iframe 
+                    title="Sijainti kartalla"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1477.275172101446!2d24.248871207733032!3d63.77358692121012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4686d33eaf9ba8f5%3A0xff95c21334a71fc6!2sHermoratahieroja%20Maria%20Viitasalo!5e1!3m2!1sfi!2sfi!4v1792798955853!5m2!1sfi!2sfi"
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0, display: "block", minHeight: "350px" }} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  />
+                ) : (
+                  <div className="kartta-esikatselu">
+                    <svg
+                      aria-hidden="true"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <p className="kartta-osoite">Lampintie 2, 69300 Toholampi</p>
+                    <p className="kartta-huomio">
+                      Kartan avaaminen lataa ulkoisen sisällön Google Mapsista.
+                    </p>
+                    <button
+                      type="button"
+                      className="kartta-nappi"
+                      onClick={() => setNaytaKartta(true)}
+                    >
+                      Näytä kartta
+                    </button>
+                  </div>
+                )}
               </div>
 
             </div>

@@ -5,6 +5,15 @@
 // PALVELUT OSIO 
 export const services = [
   {
+    title: "Psyykkinen valmennus",
+    shortDescription: "Mitä olet valmis tekemään, jotta saavutat unelmasi? Jos olet ikuinen painonpudottaja ja nyt tiedät, että se sama, mitä olet toistanut tai aloittanut maanantaisin, ei toimi, voi psyykkinen valmennus olla ratkaisusi. Mikään unelma tai tavoite ei ole saavutettavissa ennen kuin oikeasti tiedät, mihin pystyt ja mitä oikeasti voit arjessasi tehdä unelmasi eteen.",
+    description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
+    korttiKuva: "psyykkinenvalmennus1.webp",
+    paaKuva: "psyykkinenvalmennus1.webp",
+    imgAlt: "Psyykkinen ravintovalmentaja Maria Viitasalo",
+    id: "psyykkinen" 
+  },
+  {
     title: "Hermoratahieronta",
     shortDescription: "Hermoratahieronta on kokonaisvaltaista hierontaa päästä varpaisiin. Auttaa kehon kipu- ja särkytiloihin sekä rauhoittaa kehoa ja mieltä. Sopii vauvasta vaariin.",
     description: `Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa ja kehon ääreishermoston käsittelyä. Hoidolla kuntoutetaan ääreishermostoa toimimaan niin, että keskushermosto saadaan toimimaan tehokkaasti ja aivot tekemään tehtäväänsä.
@@ -52,7 +61,7 @@ Hermoratahieronta auttaa lihasvaivoihin, useimpiin kroonisiin sairauksiin sekä 
   {
     title: "Cambridge-ohjelma",
     shortDescription: "Yksi Suomen suosituimmista painonpudotusohjelmista! Sadat onnistumistarinat kertovat puolestaan. Saat henkilökohtaisen valmentajan, maistuvat laadukkaat ateriankorvikkeemme ja siihen rinnalle maistuvan tavallisen ruoan. Opettele heti alusta saakka viikko viikolta, mitä lautasmalli ja säännöllinen syöminen ovat. Valmentaja on tukenasi viikoittain joko lähi- tai etävalmennuksena.",
-description: `Cambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ohjelmaan kuuluvista ateriankorvikkeista (kuten puuroista, keitoista, pirtelöistä ja patukoista). Kokonaisuus suunnitellaan aina yksilöllisesti sinun tavoitteidesi ja elämäntilanteesi mukaan.
+    description: `Cambridge-ohjelma rakentuu henkilökohtaisesta valmennuksesta, tavallisesta ruoasta ja ohjelmaan kuuluvista ateriankorvikkeista (kuten puuroista, keitoista, pirtelöistä ja patukoista). Kokonaisuus suunnitellaan aina yksilöllisesti sinun tavoitteidesi ja elämäntilanteesi mukaan.
 
 Käytännössä aloitamme nykytilanteen kartoittamisella: käymme läpi ruokailutottumuksesi, arkesi voimavarat ja mahdolliset terveydelliset rajoitteet. Tämän pohjalta valitsemme sinulle sopivan ohjelmatason, jossa tavallisen ruoan ja Cambridge-aterioiden määrät yhdistyvät fiksusti. Saat selkeät ohjeet siihen, mitä ja kuinka paljon syöt päivän aikana. Minun valmennuksessani saat valmiin ohjelman lisäksi syvällisempää tukea tapojen muuttamiseen. Tarkastelemme syömisen taustoja ja tunnistamme esimerkiksi tunteiden, stressin ja totuttujen tapojen vaikutuksia valintoihisi.
 
@@ -63,15 +72,6 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     paaKuva: "cambridge2.webp",
     imgAlt: "Valikoima The 1:1 Diet by Cambridge -ohjelman tuotteita",
     id: "cambridge" 
-  },
-  {
-    title: "Psyykkinen valmennus",
-    shortDescription: "Mitä olet valmis tekemään, jotta saavutat unelmasi? Jos olet ikuinen painonpudottaja ja nyt tiedät, että se sama, mitä olet toistanut tai aloittanut maanantaisin, ei toimi, voi psyykkinen valmennus olla ratkaisusi. Mikään unelma tai tavoite ei ole saavutettavissa ennen kuin oikeasti tiedät, mihin pystyt ja mitä oikeasti voit arjessasi tehdä unelmasi eteen.",
-    description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
-    korttiKuva: "psyykkinenvalmennus1.webp",
-    paaKuva: "psyykkinenvalmennus1.webp",
-    imgAlt: "Psyykkinen ravintovalmentaja Maria Viitasalo",
-    id: "psyykkinen" 
   },
   {
     title: "Purentalihasten hieronta",

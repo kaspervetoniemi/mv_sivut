@@ -30,7 +30,7 @@ export default function Nav({ page, navigate }: Props) {
 
         {/* Logo */}
         <button className="nav-logo" onClick={() => handleNav("home")} aria-label="Etusivulle">
-          <img src="mv_logo_lapinakuva2.png" alt="Maria Viitasalo logo" />
+          <img src="mv_logo_lapinakuva2.webp" alt="Maria Viitasalo logo" />
         </button>
 
         {/* Desktop links */}

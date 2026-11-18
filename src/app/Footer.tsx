@@ -28,7 +28,7 @@ export default function Footer({ navigate }: Props) {
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Lampintie 2, 69300 Toholampi</p>
               <p><a href="mailto:maria.viitasalo@cambridgeohjelma.fi">maria.viitasalo@cambridgeohjelma.fi</a></p>
               <p><a href="tel:+358458402788">045 840 2788</a></p>
-              <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Y-tunnus: 1234567-8</p>
+              <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Y-tunnus: 3360168-9</p>
             </div>
           </div>
 
@@ -41,7 +41,7 @@ export default function Footer({ navigate }: Props) {
               aria-label="Etusivulle"
             >
               <img
-                src="mv_logo_lapinakuva2.png"
+                src="mv_logo_lapinakuva2.webp"
                 alt="Maria Viitasalo logo"
                 className="footer-logo-kuva"
               />
@@ -102,7 +102,7 @@ export default function Footer({ navigate }: Props) {
             rel="noopener noreferrer"
             aria-label="Hermoratahieronnan mestarit ry"
           >
-            <img src="hrhry_logo.png" alt="Hermoratahieronnan mestarit ry logo" />
+            <img src="hrhry_logo.webp" alt="Hermoratahieronnan mestarit ry logo" />
           </a>
 
           <a
@@ -112,7 +112,7 @@ export default function Footer({ navigate }: Props) {
             aria-label="The 1:1 Diet by Cambridge Weight Plan"
           >
             <img
-              src="one2onediet_logo.png"
+              src="one2onediet_logo.webp"
               alt="One2Onediet.fi logo"
               className="one2one-kuva"
             />

@@ -410,6 +410,53 @@ a { text-decoration: none; color: inherit; }
 .some-linkki svg { width: 0.9rem; height: 0.9rem; color: var(--pinkki); }
 .some-linkki:hover { color: var(--teksti); }
 
+/* ── KARTAN KLIKKAUSLATAUS ── */
+.kartta-esikatselu {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  padding: 2rem 1.5rem;
+  background: #f3ebe6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.65rem;
+  color: #3d2c2c;
+}
+
+.kartta-osoite {
+  font-weight: 500;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.kartta-huomio {
+  font-size: 0.85rem;
+  color: #5c4949;
+  max-width: 320px;
+  margin: 0 0 0.5rem;
+}
+
+.kartta-nappi {
+  background: #613e3e;
+  color: #faf6f3;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  font-family: var(--fontti-teksti);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.kartta-nappi:hover {
+  background: #4e3131;
+  transform: translateY(-1px);
+}
+
 /* ────────────────────────────────────────
    HINNASTO
    ──────────────────────────────────────── */
