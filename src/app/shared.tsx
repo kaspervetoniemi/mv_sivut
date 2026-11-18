@@ -46,7 +46,7 @@ Hermoratahieronta auttaa lihasvaivoihin, useimpiin kroonisiin sairauksiin sekä 
     note: "Kerrothan aina valmentajalle, jos sinulla on suonikohjuja.",
     korttiKuva: "hermoratahieronta1.webp",
     paaKuva: "hermoratahieronta2.webp",
-    imgAlt: "Hieronta kuumakivillä",
+    imgAlt: "Hermoratahieroja Maria Viitasalo tekemässä hermoratahierontaa",
     id: "hermoratahieronta"
   },
   {
@@ -61,7 +61,7 @@ Säännöllisissä tapaamisissa seuraamme edistymistäsi, ratkomme arjen haastei
 Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateriankorvikkeet joka viikolle valitun tason mukaan, ja saat ohjeet niiden ostoon valmentajaltasi. Valmennus voidaan toteuttaa joko lähivalmennuksena Toholammilla tai Kokkolassa, tai etänä sinne, missä olet. Kannukseen ajanvaraus sopimuksen mukaan. Voit varata 30 minuutin ilmaisen tutustumisen ajanvarauskalenteristani tai suoraan startin. Soittopyynnön jättäneelle soitan takaisin.`,
     korttiKuva: "cambridge1.webp",
     paaKuva: "cambridge2.webp",
-    imgAlt: "Terveellistä hedelmää ja ravintoa",
+    imgAlt: "Valikoima The 1:1 Diet by Cambridge -ohjelman tuotteita",
     id: "cambridge" 
   },
   {
@@ -70,7 +70,7 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
     korttiKuva: "psyykkinenvalmennus1.webp",
     paaKuva: "psyykkinenvalmennus1.webp",
-    imgAlt: "Terveellistä ruokaa lautasella",
+    imgAlt: "Psyykkinen ravintovalmentaja Maria Viitasalo",
     id: "psyykkinen" 
   },
   {
@@ -79,7 +79,7 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     description: "Mitä purentalihasten hieronta on?\n\nPurentalihasten hieronta on leuan, kasvojen ja pään alueen lihaksia rentouttavaa käsittelyä, jonka tavoitteena on helpottaa lihasjännitystä sekä lievittää kipua ja kireyttä. Hampaiden narskuttelu ja yhteen pureminen voivat kuormittaa purentalihaksia huomattavasti. Tämä jännitys tuntuu usein leukaperien arkuutena, leuan jäykkyytenä tai ohimoiden kireytenä. Oireet voivat korostua erityisesti aamuisin.\n\nHieronnassa käsitellään kasvojen ja ohimoiden aluetta sekä kaulaa ja niska-hartiaseutua. Tarvittaessa purentalihaksia käsitellään myös suun sisäpuolelta poskien kautta, mutta tämä tehdään aina täysin sinun suostumuksellasi. Suun sisäpuolisessa käsittelyssä käytetään hygieniasyistä suojakäsineitä. Käsittely etenee aina rauhallisesti ja yksilöllisesti sinun tuntemuksiasi kuunnellen. Hoidon kesto on 60 minuuttia.\n\nHuomioithan, että pitkittynyt leukakipu, leuan lukkiutuminen tai suun avautumisen rajoittuminen edellyttävät aina ensin hammaslääkärin arviota.",
     korttiKuva: "purentalihashieronta1.webp",
     paaKuva: "purentalihashieronta1.webp",
-    imgAlt: "Kasvojen ja leuan alueen hieronta",
+    imgAlt: "Maria Viitasalo tekemässä purentalihashierontaa",
     id: "purentalihas" 
   }
 ];
@@ -162,12 +162,12 @@ export const ryhmavalmennukset: RyhmavalmennusItem[] = [
 export const etusivuPopup = {
   aktiivinen: true,
   viiveMs: 4000,
-  otsikko: "Cambridge-valmennus – ilmoittaudu mukaan",
+  otsikko: "Testi popup-otsikko",
   teksti:
-    "Tähän päivitetään tarkempi esittelyteksti valmennuksesta. Tutustu ryhmävalmennuksiin tarkemmin tai jätä ilmoittautumisesi suoraan alta.",
-  lueLisaaTeksti: "Lue lisää ryhmävalmennuksista →",
-  valmennuksenNimi: "4 viikon lyhytohjelma – ryhmävalmennus",
-  valintaruutuTeksti: "Ilmoittaudun mukaan valmennukseen.",
+    "Tähän päivitetään tarkempi esittelyteksti",
+  lueLisaaTeksti: "Lue lisää→",
+  valmennuksenNimi: "palvelun nimi?",
+  valintaruutuTeksti: "Ilmoittaudun mukaan palveluun?",
   nappiTeksti: "Lähetä ilmoittautuminen",
   kiitosTeksti: "Kiitos ilmoittautumisestasi! Olen sinuun yhteydessä pian.",
   suljeKokonaanTeksti: "Sulje ilmoitus kokonaan",

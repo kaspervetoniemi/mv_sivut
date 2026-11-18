@@ -42,7 +42,7 @@ export default function Footer({ navigate }: Props) {
             >
               <img
                 src="mv_logo_lapinakuva2.png"
-                alt="Tmi Maria Viitasalo"
+                alt="Maria Viitasalo logo"
                 className="footer-logo-kuva"
               />
             </button>
@@ -80,7 +80,7 @@ export default function Footer({ navigate }: Props) {
                   target="_blank" 
                   rel="noreferrer" 
                   className="footer-some-nappi" 
-                  aria-otelabel="Instagram"
+                  aria-label="Instagram"
                 >
                   <svg fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -102,7 +102,7 @@ export default function Footer({ navigate }: Props) {
             rel="noopener noreferrer"
             aria-label="Hermoratahieronnan mestarit ry"
           >
-            <img src="hrhry_logo.png" alt="Hermoratahieronnan mestarit ry" />
+            <img src="hrhry_logo.png" alt="Hermoratahieronnan mestarit ry logo" />
           </a>
 
           <a
@@ -113,7 +113,7 @@ export default function Footer({ navigate }: Props) {
           >
             <img
               src="one2onediet_logo.png"
-              alt="The 1:1 Diet – One2Onediet.fi"
+              alt="One2Onediet.fi logo"
               className="one2one-kuva"
             />
           </a>
@@ -124,7 +124,7 @@ export default function Footer({ navigate }: Props) {
           <p className="footer-copyright">Tmi. Maria Hannele Viitasalo | Made by Kasper Vetoniemi</p>
           <div className="footer-lait">
             <a href="#">Tietosuojaseloste</a>
-            <a href="#"></a>
+            <a href="#">Evästeasetukset</a>
           </div>
         </div>
 

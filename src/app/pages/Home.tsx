@@ -38,7 +38,6 @@ export default function Home({ navigate }: Props) {
           muted 
           loop 
           playsInline 
-          poster="/assets/hero-poster.jpg"
         >
           <source src="herovideo.mp4" type="video/mp4" />
         </video>

@@ -701,7 +701,7 @@ a { text-decoration: none; color: inherit; }
 
 .footer-tagline { 
   font-size: 0.875rem; 
-  color: rgba(255,255,255,0.5); 
+  color: rgba(255,255,255,0.78); 
   text-align: center;
 }
 
@@ -709,7 +709,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.65rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.75);
   margin-bottom: 0.75rem;
 }
 
@@ -805,13 +805,13 @@ a { text-decoration: none; color: inherit; }
   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer-copyright { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+.footer-copyright { font-size: 0.75rem; color: rgba(255,255,255,0.72); }
 
 .footer-lait { display: flex; gap: 1.25rem; }
 
 .footer-lait a {
   font-size: 0.75rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.72);
   transition: color 0.2s;
 }
 
@@ -1241,7 +1241,34 @@ a { text-decoration: none; color: inherit; }
   top: 50%;
   transform: translateY(-50%);
   z-index: 990;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
   animation: kielekeSisaan 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.popup-kieleke-sulje {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  padding: 0;
+  background: #faf6f3;
+  color: #3d2c2c;
+  border: 1px solid rgba(97, 62, 62, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.popup-kieleke-sulje:hover {
+  background: #3d2c2c;
+  color: #faf6f3;
+  transform: scale(1.08);
 }
 
 .popup-kieleke {
@@ -1259,33 +1286,7 @@ a { text-decoration: none; color: inherit; }
   transition: width 0.25s ease, background-color 0.25s ease;
 }
 
-.popup-kieleke-wrap:hover .popup-kieleke {
+.popup-kieleke:hover {
   width: 56px;
   background: #4e3131;
-}
-
-.popup-kieleke-sulje {
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  background: #faf6f3;
-  color: #3d2c2c;
-  border: 1px solid rgba(97, 62, 62, 0.22);
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 2;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-}
-
-.popup-kieleke-sulje:hover {
-  background: #3d2c2c;
-  color: #faf6f3;
-  transform: scale(1.08);
 }
