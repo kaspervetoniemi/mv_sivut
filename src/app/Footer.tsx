@@ -12,6 +12,7 @@ const links: { label: string; page: Page }[] = [
   { label: "Hinnasto",     page: "hinnasto" },
   { label: "Yhteystiedot", page: "yhteystiedot" },
   { label: "Ajanvaraus",   page: "ajanvaraus" },
+  { label: "Ryhmävalmennukset", page: "ryhmavalmennukset" },
 ];
 
 export default function Footer({ navigate }: Props) {
@@ -27,6 +28,7 @@ export default function Footer({ navigate }: Props) {
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Lampintie 2, 69300 Toholampi</p>
               <p><a href="mailto:maria.viitasalo@cambridgeohjelma.fi">maria.viitasalo@cambridgeohjelma.fi</a></p>
               <p><a href="tel:+358458402788">045 840 2788</a></p>
+              <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "0.85rem" }}>Y-tunnus: 1234567-8</p>
             </div>
           </div>
 
@@ -119,7 +121,7 @@ export default function Footer({ navigate }: Props) {
 
         {/* Bottom bar */}
         <div className="footer-pohja">
-          <p className="footer-copyright">Tmi Maria Hannele Viitasalo | Made by Kasper Vetoniemi</p>
+          <p className="footer-copyright">Tmi. Maria Hannele Viitasalo | Made by Kasper Vetoniemi</p>
           <div className="footer-lait">
             <a href="#">Tietosuojaseloste</a>
             <a href="#"></a>

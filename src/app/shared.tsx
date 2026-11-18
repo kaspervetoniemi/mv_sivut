@@ -44,7 +44,6 @@ Hermoratahieronta auttaa lihasvaivoihin, useimpiin kroonisiin sairauksiin sekä 
       "Sydämentahdistin ei ole este hoidolle"
     ],
     note: "Kerrothan aina valmentajalle, jos sinulla on suonikohjuja.",
-    icon: "✦",
     korttiKuva: "hermoratahieronta1.webp",
     paaKuva: "hermoratahieronta2.webp",
     imgAlt: "Hieronta kuumakivillä",
@@ -59,7 +58,7 @@ Käytännössä aloitamme nykytilanteen kartoittamisella: käymme läpi ruokailu
 
 Säännöllisissä tapaamisissa seuraamme edistymistäsi, ratkomme arjen haasteita ja harjoittelemme painonhallintaa. Tavoitteena on rakentaa pysyviä ruokailutapoja, joita pystyt jatkamaan vaivattomasti myös painonpudotuksen jälkeen – kiireessä, viikonloppuina ja silloin, kun kaikki ei mene suunnitelmien mukaan. Tavoitteena on pysyvien tulosten saavuttaminen säännöllisen henkilökohtaisen valmennuksen avulla. Laihduttajalle suunnitellut ateriankorvikkeet ja tavallinen terveellinen ruoka luovat yhdessä helpon ja yksinkertaisen pohjan ruokavaliollesi, ja ohjelman edetessä saat opetella rauhassa annoskokoja, ateriarytmiä ja valintoja.
 
-Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateriankorvikkeet joka viikolle valitun tason mukaan, ja saat ohjeet niiden ostoon valmentajaltasi. Valmennus voidaan toteuttaa joko lähivalmennuksena Toholammilla tai Kokkolassa, tai etänä sinne, missä olet. Kannukseen ajanvaraus sopimuksen mukaan. Voit varata 30 minuutin ilmaisen tutustumisen ajanvarauskalenteristani tai suoraan startin. Soittopyynnön jättäneelle soitan takaisin.`,    icon: "◇",
+Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateriankorvikkeet joka viikolle valitun tason mukaan, ja saat ohjeet niiden ostoon valmentajaltasi. Valmennus voidaan toteuttaa joko lähivalmennuksena Toholammilla tai Kokkolassa, tai etänä sinne, missä olet. Kannukseen ajanvaraus sopimuksen mukaan. Voit varata 30 minuutin ilmaisen tutustumisen ajanvarauskalenteristani tai suoraan startin. Soittopyynnön jättäneelle soitan takaisin.`,
     korttiKuva: "cambridge1.webp",
     paaKuva: "cambridge2.webp",
     imgAlt: "Terveellistä hedelmää ja ravintoa",
@@ -69,7 +68,6 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     title: "Psyykkinen valmennus",
     shortDescription: "Mitä olet valmis tekemään, jotta saavutat unelmasi? Jos olet ikuinen painonpudottaja ja nyt tiedät, että se sama, mitä olet toistanut tai aloittanut maanantaisin, ei toimi, voi psyykkinen valmennus olla ratkaisusi. Mikään unelma tai tavoite ei ole saavutettavissa ennen kuin oikeasti tiedät, mihin pystyt ja mitä oikeasti voit arjessasi tehdä unelmasi eteen.",
     description: "Mitä on psyykkinen valmennus?\n\nPsyykkinen valmennus auttaa ymmärtämään itseäsi ja tekemään muutoksia, jotka ovat sinulle tärkeitä. Siinä tarkastellaan, miten ajatuksesi, tunteesi ja totutut toimintatapasi vaikuttavat arkeesi. Liikkeelle lähdetään sinun perustastasi: kuka minä olen, mitä minä haluan ja miksi se on minulle tärkeää?\n\nJos esimerkiksi haluat muuttaa syömistottumuksiasi, saatat jo tietää, miten haluaisit syödä. Silti kiire, väsymys tai lohdun tarve ohjaa toimimaan vanhalla tavalla. Valmennuksessa pysähdytään tunnistamaan, mitä näissä tilanteissa tapahtuu, ja kokeillaan sinulle sopivia uusia tapoja.\n\nKeskustelujen ja käytännön harjoitusten avulla voit vahvistaa luottamusta omaan pystyvyyteesi, selkeyttää tavoitteitasi ja löytää pieniä askelia niitä kohti, tunnistaa muutosta vaikeuttavia ajatuksia ja tapoja sekä harjoitella lempeämpää suhtautumista itseesi myös vaikeina päivinä. Tavoitteena on, että ymmärryksen rinnalle syntyy toimintaa ja kokemuksia onnistumisesta.\n\n\"Minä pystyn vaikuttamaan elämääni, ja minun hyvinvointini on huolenpidon arvoinen.\"",
-    icon: "❋",
     korttiKuva: "psyykkinenvalmennus1.webp",
     paaKuva: "psyykkinenvalmennus1.webp",
     imgAlt: "Terveellistä ruokaa lautasella",
@@ -79,7 +77,6 @@ Cambridge-ohjelmaan kuuluu säännöllinen valmennus ohjelman mukaan sekä ateri
     title: "Purentalihasten hieronta",
     shortDescription: "Purentalihasten hieronta rentouttaa leuan, kasvojen ja pään alueen kireyksiä. Se helpottaa tehokkaasti esimerkiksi hampaiden narskuttelusta tai stressistä johtuvaa kipua ja jännitystä.",
     description: "Mitä purentalihasten hieronta on?\n\nPurentalihasten hieronta on leuan, kasvojen ja pään alueen lihaksia rentouttavaa käsittelyä, jonka tavoitteena on helpottaa lihasjännitystä sekä lievittää kipua ja kireyttä. Hampaiden narskuttelu ja yhteen pureminen voivat kuormittaa purentalihaksia huomattavasti. Tämä jännitys tuntuu usein leukaperien arkuutena, leuan jäykkyytenä tai ohimoiden kireytenä. Oireet voivat korostua erityisesti aamuisin.\n\nHieronnassa käsitellään kasvojen ja ohimoiden aluetta sekä kaulaa ja niska-hartiaseutua. Tarvittaessa purentalihaksia käsitellään myös suun sisäpuolelta poskien kautta, mutta tämä tehdään aina täysin sinun suostumuksellasi. Suun sisäpuolisessa käsittelyssä käytetään hygieniasyistä suojakäsineitä. Käsittely etenee aina rauhallisesti ja yksilöllisesti sinun tuntemuksiasi kuunnellen. Hoidon kesto on 60 minuuttia.\n\nHuomioithan, että pitkittynyt leukakipu, leuan lukkiutuminen tai suun avautumisen rajoittuminen edellyttävät aina ensin hammaslääkärin arviota.",
-    icon: "◈",
     korttiKuva: "purentalihashieronta1.webp",
     paaKuva: "purentalihashieronta1.webp",
     imgAlt: "Kasvojen ja leuan alueen hieronta",
@@ -150,7 +147,6 @@ export interface RyhmavalmennusItem {
 export const ryhmavalmennukset: RyhmavalmennusItem[] = [
   {
     id: "lyhytohjelma-kevat-2027",
-    icon: "◇",
     title: "4 viikon lyhytohjelma – ryhmävalmennus",
     text: "Ryhmävalmennukset vuonna 2027 alkavat tammikuussa! Painonpudottajille suunnattu 4 viikon lyhytohjelma -ryhmävalmennus toteutetaan etänä Teams-palvelun kautta. Neljä viikkoa kestävässä ohjelmassa käydään läpi tasot 1–3, ja se sisältää 5 valmennusta, ateriankorvikkeet ohjelman mukaan sekä ruokaohjeistuksen. Tarkemmat ohjeet valmennukseen ja tuotteiden ostoon saat ilmoittautumisen jälkeen – ilmoittautuminen tapahtuu suoraan viereisestä ajanvarauskalenterista.",
     datesTitle: "Aloitusajankohdat",

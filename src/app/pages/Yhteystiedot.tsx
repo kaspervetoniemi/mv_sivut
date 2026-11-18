@@ -126,6 +126,20 @@ export default function Yhteystiedot({ navigate }: Props) {
                     <a href="mailto:maria.viitasalo@cambridgeohjelma.fi" className="yhteystieto-arvo">maria.viitasalo@cambridgeohjelma.fi</a>
                   </div>
                 </div>
+
+                {/* UUSI Y-TUNNUS-RIVI */}
+                <div className="yhteystieto-rivi">
+                  <div className="yhteystieto-ikoni">
+                    <svg fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                      <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="yhteystieto-otsikko">Y-tunnus</p>
+                    <p className="yhteystieto-arvo">1234567-8</p>
+                  </div>
+                </div>
                 
                 <div className="yhteystieto-rivi">
                   <div className="yhteystieto-ikoni">
