@@ -216,7 +216,6 @@ export default function Popup({ navigate }) {
           ✕
         </button>
 
-        <span className="ylateksti">{etusivuPopup.ylateksti}</span>
         <h2 className="otsikko popup-otsikko">{etusivuPopup.otsikko}</h2>
         <p className="popup-teksti">{etusivuPopup.teksti}</p>
 

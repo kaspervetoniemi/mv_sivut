@@ -14,7 +14,6 @@ export default function Hinnasto({ navigate }: Props) {
 
       {/* ── PAGE HEADER ── (Ei animoida, jotta näkyy heti sivun latautuessa) */}
       <div className="sivu-hero">
-        <span className="ylateksti">Hinnasto</span>
         <h1 className="otsikko">Hinnasto</h1>
       </div>
 

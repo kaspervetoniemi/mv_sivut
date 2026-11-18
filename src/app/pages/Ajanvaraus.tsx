@@ -10,7 +10,6 @@ export default function Ajanvaraus() {
     <div>
       {/* ── PAGE HEADER ── (Ei animoida, jotta näkyy heti) */}
       <div className="sivu-hero">
-        <span className="ylateksti">Ajanvaraus</span>
         <h1 className="otsikko">Ajanvaraus</h1>
         <p
           style={{

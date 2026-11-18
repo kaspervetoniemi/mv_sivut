@@ -10,7 +10,6 @@ export default function Ryhmavalmennukset() {
   return (
     <div>
       <div className="sivu-hero">
-        <span className="ylateksti">Ryhmävalmennukset</span>
         <h1 className="otsikko">Ryhmävalmennukset</h1>
       </div>
 

@@ -14,7 +14,6 @@ export default function Palvelut({ navigate }: Props) {
 
       {/* ── PAGE HEADER ── */}
       <div className="sivu-hero">
-        <span className="ylateksti">Palvelut</span>
         <h1 className="otsikko">Palvelut</h1>
       </div>
 

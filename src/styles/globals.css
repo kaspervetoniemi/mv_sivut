@@ -188,14 +188,6 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 3.5rem;
 }
 
-.ylateksti {
-  display: block;
-  font-size: 0.65rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--pinkki);
-  margin-bottom: 1rem;
-}
 
 .otsikko {
   font-family: var(--fontti-otsikko);

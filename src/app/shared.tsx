@@ -162,7 +162,6 @@ export const ryhmavalmennukset: RyhmavalmennusItem[] = [
 export const etusivuPopup = {
   aktiivinen: true,
   viiveMs: 4000,
-  ylateksti: "Ajankohtaista",
   otsikko: "Cambridge-valmennus – ilmoittaudu mukaan",
   teksti:
     "Tähän päivitetään tarkempi esittelyteksti valmennuksesta. Tutustu ryhmävalmennuksiin tarkemmin tai jätä ilmoittautumisesi suoraan alta.",

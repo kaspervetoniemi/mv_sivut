@@ -63,7 +63,6 @@ export default function Home({ navigate }: Props) {
           <div className="sisalto">
             <div className="ruudukko-2">
               <div className="minusta-teksti">
-                <span className="ylateksti">Minusta</span>
                 <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Minusta</h2>
                 
                 <p style={{ fontStyle: "italic", fontWeight: "bold", fontSize: "1.1rem", marginBottom: "1rem" }}>
@@ -94,7 +93,6 @@ export default function Home({ navigate }: Props) {
         <ScrollReveal>
           <div className="sisalto">
             <div className="otsikkoalue">
-              <span className="ylateksti">Palvelut</span>
               <h2 className="otsikko">Palvelut</h2>
             </div>
 
@@ -141,7 +139,6 @@ export default function Home({ navigate }: Props) {
         <ScrollReveal>
           <div className="sisalto-keski">
             <div className="otsikkoalue">
-              <span className="ylateksti">Asiakkaiden kertomaa</span>
               <h2 className="otsikko">Asiakkaiden kertomaa</h2>
             </div>
             <div className="arvostelu-kortti">
@@ -171,7 +168,6 @@ export default function Home({ navigate }: Props) {
         <ScrollReveal>
           <div className="sisalto">
             <div className="otsikkoalue">
-              <span className="ylateksti">Sijainti</span>
               <h2 className="otsikko">Sijainti</h2>
             </div>
             <div className="ruudukko-2">

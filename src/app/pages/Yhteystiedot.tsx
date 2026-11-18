@@ -14,7 +14,6 @@ export default function Yhteystiedot({ navigate }: Props) {
 
       {/* ── PAGE HEADER ── (Ei animoida) */}
       <div className="sivu-hero">
-        <span className="ylateksti">Minusta &amp; Yhteystiedot</span>
         <h1 className="otsikko">Minusta &amp; Yhteystiedot</h1>
       </div>
 
@@ -33,7 +32,6 @@ export default function Yhteystiedot({ navigate }: Props) {
               </div>
 
               <div className="minusta-teksti">
-                <span className="ylateksti">Minusta</span>
                 <h2 className="otsikko" style={{ marginBottom: "1.5rem" }}>Minusta</h2>
                 
                 <p style={{ fontStyle: "italic", fontWeight: "bold", fontSize: "1.1rem" }}>
@@ -81,7 +79,6 @@ export default function Yhteystiedot({ navigate }: Props) {
         <ScrollReveal>
           <div className="sisalto">
             <div className="otsikkoalue">
-              <span className="ylateksti">Sijainti &amp; Yhteystiedot</span>
               <h2 className="otsikko">Sijainti &amp; Yhteystiedot</h2>
             </div>
             <div className="ruudukko-2">
