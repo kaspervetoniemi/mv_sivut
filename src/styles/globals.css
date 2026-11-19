@@ -1035,10 +1035,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 /* ────────────────────────────────────────
-   RYHMÄVALMENNUS SIVUN SISÄLLÖT
+   POPUP 
    ──────────────────────────────────────── */
 
-/* ── ETUSIVUN POPUP & SIVUKIELEKE ── */
 @keyframes popupTaustaSisaan {
   from {
     opacity: 0;
@@ -1281,24 +1280,25 @@ a { text-decoration: none; color: inherit; }
   color: #3d2c2c;
 }
 
-/* ── OIKEAN LAIDAN PIKKUKUVIO ── */
+/* ────────────────────────────────────────
+   OIKEAN LAIDAN PIKKUKUVIO
+   ──────────────────────────────────────── */
+
 .popup-kieleke-wrap {
   position: fixed;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: 990;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
   animation: kielekeSisaan 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .popup-kieleke-sulje {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 22px;
+  height: 22px;
   padding: 0;
   background: #faf6f3;
   color: #3d2c2c;
@@ -1308,6 +1308,7 @@ a { text-decoration: none; color: inherit; }
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16);
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
@@ -1315,7 +1316,7 @@ a { text-decoration: none; color: inherit; }
 .popup-kieleke-sulje:hover {
   background: #3d2c2c;
   color: #faf6f3;
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 .popup-kieleke {

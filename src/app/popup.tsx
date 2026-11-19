@@ -172,8 +172,8 @@ export default function Popup({ navigate }) {
           type="button"
           className="popup-kieleke"
           onClick={avaaPopup}
-          aria-label="Avaa ilmoittautumisikkuna"
-          title={etusivuPopup.otsikko}
+          aria-label="Avaa ryhmävalmennusilmoitus"
+          title="Avaa ilmoitus"
         >
           <svg
             width="22"
@@ -181,7 +181,7 @@ export default function Popup({ navigate }) {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="1.9"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
             aria-hidden="true"
