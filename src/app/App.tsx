@@ -9,8 +9,9 @@ import Ajanvaraus from "./pages/Ajanvaraus";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import Ryhmavalmennukset from "./pages/Ryhmavalmennukset";
+import Tietosuojaseloste from "./pages/Tietosuojaseloste";
 
-export type Page = "home" | "palvelut" | "hinnasto" | "yhteystiedot" | "ajanvaraus" | "ryhmavalmennukset";
+export type Page = "home" | "palvelut" | "hinnasto" | "yhteystiedot" | "ajanvaraus" | "ryhmavalmennukset" | "tietosuojaseloste";
 
 export default function App() {
   const [page, setPage] = useState<Page>("home");
@@ -31,6 +32,7 @@ export default function App() {
         {page === "yhteystiedot" && <Yhteystiedot   navigate={navigate} />}
         {page === "ryhmavalmennukset" && <Ryhmavalmennukset navigate={navigate} />}
         {page === "ajanvaraus"   && <Ajanvaraus navigate={navigate} />}
+        {page === "tietosuojaseloste" && <Tietosuojaseloste navigate={navigate} />}
       </main>
       <Footer navigate={navigate} />
     </div>

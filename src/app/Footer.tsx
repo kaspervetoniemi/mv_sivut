@@ -123,8 +123,15 @@ export default function Footer({ navigate }: Props) {
         <div className="footer-pohja">
           <p className="footer-copyright">Tmi. Maria Hannele Viitasalo | Made by Kasper Vetoniemi</p>
           <div className="footer-lait">
-            <a href="#">Tietosuojaseloste</a>
-            <a href="#">Evästeasetukset</a>
+            <a
+              href="#tietosuojaseloste"
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("tietosuojaseloste");
+              }}
+            >
+              Tietosuojaseloste
+            </a>
           </div>
         </div>
 

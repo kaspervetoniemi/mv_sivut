@@ -1337,3 +1337,31 @@ a { text-decoration: none; color: inherit; }
   width: 56px;
   background: #4e3131;
 }
+
+/* ────────────────────────────────────────
+   TIETOSUOJASELOSTE
+   ──────────────────────────────────────── */
+
+.tietosuoja-palsta {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.minusta-teksti.tietosuoja-palsta h2.otsikko {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.tietosuoja-palsta p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.tietosuoja-palsta ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: var(--harmaa);
+  list-style-type: disc;
+}
