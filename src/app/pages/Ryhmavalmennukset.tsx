@@ -20,7 +20,6 @@ export default function Ryhmavalmennukset() {
               <div>
                 {ryhmavalmennukset.length === 0 ? (
                   <div>
-                    <span className="palvelu-ikoni">◇</span>
                     <h2 className="otsikko">Tulevat ryhmävalmennukset</h2>
                     <p className="palvelu-kuvaus">
                       Tällä hetkellä ei ole avoimia ryhmävalmennuksia. Ota yhteyttä sähköpostitse{" "}
