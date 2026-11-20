@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { useState, lazy, Suspense } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import Home from "./pages/Home";
 import Nav from "./Nav";
 import Footer from "./Footer";
@@ -21,11 +21,37 @@ export type Page =
   | "ryhmavalmennukset"
   | "tietosuojaseloste";
 
+const VALID_PAGES: Page[] = [
+  "palvelut",
+  "hinnasto",
+  "yhteystiedot",
+  "ajanvaraus",
+  "ryhmavalmennukset",
+  "tietosuojaseloste",
+];
+
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+function getPageFromUrl(): Page {
+  const path = window.location.pathname;
+  const withoutBase = path.startsWith(BASE) ? path.slice(BASE.length) : path;
+  const slug = withoutBase.replace(/^\/+|\/+$/g, "") as Page;
+  return VALID_PAGES.includes(slug) ? slug : "home";
+}
+
 export default function App() {
-  const [page, setPage] = useState<Page>("home");
+  const [page, setPage] = useState<Page>(getPageFromUrl);
+
+  useEffect(() => {
+    const handlePopState = () => setPage(getPageFromUrl());
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   function navigate(p: Page) {
     setPage(p);
+    const nextUrl = `${BASE}/${p === "home" ? "" : p}`;
+    window.history.pushState({}, "", nextUrl);
     window.scrollTo(0, 0);
   }
 
