@@ -1,16 +1,15 @@
 // @ts-nocheck
 
-import { useState, useEffect, lazy, Suspense } from "react";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
+import Palvelut from "./pages/Palvelut";
+import Hinnasto from "./pages/Hinnasto";
+import Yhteystiedot from "./pages/Yhteystiedot";
+import Ajanvaraus from "./pages/Ajanvaraus";
+import Ryhmavalmennukset from "./pages/Ryhmavalmennukset";
+import Tietosuojaseloste from "./pages/Tietosuojaseloste";
 import Nav from "./Nav";
 import Footer from "./Footer";
-
-const Palvelut = lazy(() => import("./pages/Palvelut"));
-const Hinnasto = lazy(() => import("./pages/Hinnasto"));
-const Yhteystiedot = lazy(() => import("./pages/Yhteystiedot"));
-const Ajanvaraus = lazy(() => import("./pages/Ajanvaraus"));
-const Ryhmavalmennukset = lazy(() => import("./pages/Ryhmavalmennukset"));
-const Tietosuojaseloste = lazy(() => import("./pages/Tietosuojaseloste"));
 
 export type Page =
   | "home"
@@ -61,15 +60,12 @@ export default function App() {
 
       <main className="sivu">
         {page === "home" && <Home navigate={navigate} />}
-
-        <Suspense fallback={null}>
-          {page === "palvelut" && <Palvelut navigate={navigate} />}
-          {page === "hinnasto" && <Hinnasto navigate={navigate} />}
-          {page === "yhteystiedot" && <Yhteystiedot navigate={navigate} />}
-          {page === "ryhmavalmennukset" && <Ryhmavalmennukset navigate={navigate} />}
-          {page === "ajanvaraus" && <Ajanvaraus navigate={navigate} />}
-          {page === "tietosuojaseloste" && <Tietosuojaseloste navigate={navigate} />}
-        </Suspense>
+        {page === "palvelut" && <Palvelut navigate={navigate} />}
+        {page === "hinnasto" && <Hinnasto navigate={navigate} />}
+        {page === "yhteystiedot" && <Yhteystiedot navigate={navigate} />}
+        {page === "ryhmavalmennukset" && <Ryhmavalmennukset navigate={navigate} />}
+        {page === "ajanvaraus" && <Ajanvaraus navigate={navigate} />}
+        {page === "tietosuojaseloste" && <Tietosuojaseloste navigate={navigate} />}
       </main>
 
       <Footer navigate={navigate} />
