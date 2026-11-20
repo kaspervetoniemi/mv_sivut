@@ -55,7 +55,7 @@ export default function Footer({ navigate }: Props) {
 {/* Column 3 — links + social */}
           <div>
             <p className="footer-otsikko">Linkit</p>
-            <div className="for-linkit-some">
+            <div className="footer-linkit-some">
               <ul className="footer-linkit">
                 {links.map(({ label, page }) => (
                   <li key={page}>

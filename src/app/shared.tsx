@@ -136,7 +136,6 @@ export const testimonials = [
 
 export interface RyhmavalmennusItem {
   id: string;
-  icon: string;
   title: string;
   text: string;
   datesTitle?: string;

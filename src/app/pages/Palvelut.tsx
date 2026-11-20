@@ -25,7 +25,6 @@ export default function Palvelut({ navigate }: Props) {
             const onViimeinen = i === services.length - 1;
            const paaTeksti = (
   <div>
-    <span className="palvelu-ikoni">{service.icon}</span>
     <h2 className="otsikko">{service.title}</h2>
     <p className="palvelu-kuvaus">{service.description}</p>
     

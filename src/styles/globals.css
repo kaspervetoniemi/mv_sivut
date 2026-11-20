@@ -268,7 +268,6 @@ a { text-decoration: none; color: inherit; }
 
 .kortti-sisalto { padding: 1.75rem; }
 
-.palvelu-ikoni  { font-size: 1.5rem; color: var(--pinkki); display: block; margin-bottom: 1rem; }
 .palvelu-otsikko { font-family: var(--fontti-otsikko); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.75rem; }
 .palvelu-teksti  { font-size: 0.875rem; color: var(--harmaa); line-height: 1.7; }
 
@@ -889,11 +888,6 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 0;
 }
 
-.palvelu-lohko .palvelu-ikoni {
-  font-size: 2rem;
-  margin-bottom: 1.25rem;
-}
-
 .palvelu-lohko .otsikko {
   margin-bottom: 1.25rem;
 }
@@ -954,10 +948,6 @@ a { text-decoration: none; color: inherit; }
   border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.ryhma-kortti .palvelu-ikoni {
-  display: inline-block;
-  margin-bottom: 0.35rem;
-}
 
 .ryhma-kortti > h2.otsikko {
   margin-top: 0;

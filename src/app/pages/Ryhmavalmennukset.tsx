@@ -33,7 +33,6 @@ export default function Ryhmavalmennukset() {
                 ) : (
                   ryhmavalmennukset.map((ryhma) => (
                     <div key={ryhma.id} className="ryhma-kortti">
-                      <span className="palvelu-ikoni">{ryhma.icon}</span>
                       <h2 className="otsikko">{ryhma.title}</h2>
                       <p className="palvelu-kuvaus">{ryhma.text}</p>
 

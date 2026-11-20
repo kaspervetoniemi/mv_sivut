@@ -116,7 +116,6 @@ export default function Home({ navigate }: Props) {
                     <img src={service.korttiKuva} alt={service.imgAlt} />
                   </div>
                   <div className="kortti-sisalto">
-                    <span className="palvelu-ikoni">{service.icon}</span>
                     <h3 className="palvelu-otsikko">{service.title}</h3>
                     <p className="palvelu-teksti">{service.shortDescription}</p>
                   </div>
